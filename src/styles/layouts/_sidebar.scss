@@ -19,13 +19,14 @@
   a{
    padding: 15px 60px;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: flex-start;
    align-items: center;
    border-radius: $border-radius-sm;
    cursor: pointer;
    color:$info-color;
    font-weight: bold;
    margin: 20px 0;
+   gap: 0 14px;
 
   }
   svg{

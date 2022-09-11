@@ -1,5 +1,6 @@
 import SideBar from "./layouts/SideBar";
 import Topbar from "./layouts/Topbar";
+import DashboardUser from "./pages/user/DashboardUser";
 
 function App() {
 
@@ -8,36 +9,8 @@ function App() {
     <div >
       <SideBar />
       <Topbar />
-      <div className="sub-container">
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
-        <h1>ddddddddd</h1>
+      <DashboardUser />
 
-
-      </div>
     </div>
 
   );

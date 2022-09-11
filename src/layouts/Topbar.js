@@ -3,7 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 import notification from "../assets/images/icons/notification.svg"
 import account from "../assets/images/main/account.png"
 import more from "../assets/images/icons/more.svg"
-import AccountMenu from '../components/Menu';
+import AccountMenu from '../components/glopal/Menu';
 
 const Topbar = () => {
   return (

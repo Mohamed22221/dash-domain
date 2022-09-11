@@ -1,0 +1,62 @@
+//header page dashboard "wedgets"
+%default-item{
+ background-color: white;
+ padding: 20px;
+ border-radius: $border-radius-sm;
+}
+.wedgits {
+ .main-wedgets {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(50%, 1fr) );
+
+  .left-wedgets {
+   display: grid;
+   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+   width: 100%;
+   position: relative;
+   gap: 20px;
+   .item-wedgets{
+    @extend %FlexRowBetween;
+    @extend %default-item;
+
+
+    p,h4{
+     padding: 10px 0;
+     font-weight: $font-weight-medium;
+     
+    }
+    img{
+     margin-top: 55px;
+    }
+   }
+
+
+  }
+//right wedget 
+  .right-wedgets {
+   margin-left: 20px;
+   width: 100%;
+   @extend %default-item;
+   h4{
+    padding: 10px 0;
+    font-weight: $font-weight-medium;
+   }
+   p{
+    padding: 5px 0;
+    color: $info-color;
+    font-weight: $font-weight-regular;
+   }
+   .item-right-wedgets{
+    margin: 15px 0;
+    @extend %FlexRowBetween;
+    border:2px solid $danger-light-color ;
+    border-radius:$border-radius-sm ;
+    padding: 15px 25px;
+    h5 , p{
+     padding: 7px 0;
+    }
+   }
+
+  }
+ }
+}

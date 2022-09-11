@@ -5,19 +5,24 @@
  transform: translate(-50%, -50%);
 }
 %FlexDefault{
- display: flex;
- align-items: center;
+
+ @include prefix(display, flex);
+ @include prefix(align-items, center);
 }
 
 %FlexRowCenter{
- display: flex;
- justify-content: center;
- align-items: center;
+
+ @include prefix(display, flex);
+ @include prefix(justify-content, center);
+ @include prefix(align-items, center);
 }
 %FlexRowBetween{
- display: flex;
- justify-content: space-between;
- align-items: center;
+
+  @include prefix(display, flex);
+  @include prefix(justify-content, space-between);
+  @include prefix(align-items, center);
+
+
 }
 
 %Ease {

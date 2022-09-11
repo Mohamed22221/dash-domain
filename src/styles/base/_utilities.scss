@@ -1,4 +1,31 @@
-.icon {
-  width: 1rem;
-  height: 1rem;
+.black{
+  color: black;
+}
+.white{
+  color: $white-color;
+}
+.info{
+  color: $info-color;
+}
+
+.primary{
+  color: $primary-light-color;
+
+}
+.secound{
+  color: $primary-dark-color;
+
+}
+.weight-medium{
+  font-weight: $font-weight-medium;
+}
+.weight-bold{
+  font-weight: $font-weight-bold;
+}
+
+.weight-black{
+  font-weight: $font-weight-black;
+}
+.space-section{
+  margin: 35px 0;
 }
