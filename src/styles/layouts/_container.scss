@@ -3,8 +3,11 @@
   margin: 0 auto;
   position: relative;
 }
+.container-inline{
+  margin-inline:330px 40px ;
+}
 .sub-container {
-  max-width: 160rem;
-  padding: 0 10rem;
-  margin: 15rem auto;
+  margin-inline:330px 40px ;
+  margin-block:130px 40px ;
+
 }

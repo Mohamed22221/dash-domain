@@ -1,0 +1,23 @@
+.input{
+ padding: 15px 20px;
+ border-radius:$border-radius-sm ;
+ @extend %FlexDefault;
+
+ &__search{
+  background-color: $bg-light-color;
+  color: $info-color;
+  width: 50rem;
+  svg{
+   margin: 0 10px 5px 10px;
+   font-size: 2rem;
+  }
+  input{
+   width: 100%;
+   &::placeholder{
+    font-size: 1.9rem;
+    color: $info-color;
+   }
+  }
+
+ }
+}

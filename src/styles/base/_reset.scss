@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10 pixel
 }
 /* Preferred box-sizing value */
 *,*::after,*::before {
@@ -11,10 +12,12 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 body {
+
  box-sizing: inherit;
  font-weight: 500;
  background-color: $bg-light-color;
  font-family: 'Poppins', sans-serif;
+ height: 5000px;
 }
 ul ,menu ,ol {
  list-style: none;
@@ -36,15 +39,7 @@ a,button,input,select,textarea{
 }
 
 
-// scroll
-::-webkit-scrollbar {
- width: 0.5rem;
-}
 
-::-webkit-scrollbar-thumb {
- border-radius: 1rem;
-
-}
 // Remove spacing between table cells
 table {
  border-collapse: collapse;

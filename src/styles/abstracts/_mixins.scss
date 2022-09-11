@@ -46,7 +46,7 @@
   position: absolute;
   top: #{$top};
   left: #{$left};
-  @include prefix(transform, translate(#{$left}, #{$top}));
+  @include prefix(transform, translate(-#{$left}, -#{$top}));
   //@include center(-50%,-50% )
 }
 

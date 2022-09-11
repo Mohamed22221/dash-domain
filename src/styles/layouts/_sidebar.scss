@@ -1,10 +1,11 @@
 .sidebar{
  background-color: $white-color-1;
- height: 100vh;
- width: 300px;
- position: static;
+ box-shadow: $box-shadow-light;
+ position: fixed;
  left: 0;
  bottom: 0;
+ height: 100vh;
+ width: 300px;
  z-index: 100;
  padding: 20px 15px;
  .logo{
@@ -25,11 +26,11 @@
    color:$info-color;
    font-weight: bold;
    margin: 20px 0;
-   svg{
 
-    color:$info-color ;
-    font-size: 32px;
-   }
+  }
+  svg{
+
+   font-size:$text-3xl ;
   }
   .active{
    color: white;

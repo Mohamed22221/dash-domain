@@ -4,6 +4,10 @@
  left: 50%;
  transform: translate(-50%, -50%);
 }
+%FlexDefault{
+ display: flex;
+ align-items: center;
+}
 
 %FlexRowCenter{
  display: flex;
@@ -17,6 +21,5 @@
 }
 
 %Ease {
- transition: all 0.35s ease-in-out;
- -webkit-transition: all 0.35s ease-in-out !important;
+  @include prefix(transition , all 0.35s ease-in-out);
 }

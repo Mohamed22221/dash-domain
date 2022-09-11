@@ -8,10 +8,15 @@
 @import "./base/typography";
 @import "./base/utilities";
 @import "./base/animation";
+//folder components
+@import "./components/buttons";
+@import "./components/inputs";
 
 //folder layouts
 @import "./layouts/container";
-@import "./layouts/sidebar"
+@import "./layouts/sidebar";
+@import "./layouts/topbar"
+
 
 
 

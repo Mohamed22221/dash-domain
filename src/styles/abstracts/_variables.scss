@@ -23,15 +23,15 @@ $gray-color-6: #1d2b33;
 $font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-medium: 500;
+$font-weight-medium: 600;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
 //font sizes
 $text-xs:   1rem;
 $text-sm:   1.3rem;
-$text-base: 1.5rem;
-$text-lg:   1.6rem;
+$text-base: 1.6rem;
+$text-lg:   1.7rem;
 $text-xl:   1.8rem;
 $text-2xl:  2rem;
 $text-3xl:  3rem;
@@ -47,7 +47,7 @@ $border-white-color: $white-color-1;
 
 // border radius
 $border-radius: 2rem;
-$border-radius-sm: 0.6rem;
+$border-radius-sm: 1rem;
 $border-radius-2: 12px;
 $border-radius-3: 16px;
 $border-radius-4: 22px;
@@ -61,7 +61,7 @@ $badge-p-padding-x: 15px;
 $breadcrumb-bottom-margin: 12px;
 
 // shadows
-$box-shadow-light: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06);
+$box-shadow-light: 0px 4px 8px rgba(45, 45, 45, 0.16);;
 $box-shadow-medium: 0 8px 11px rgba(0, 0, 0, 0.1), 0 9px 12px rgba(0, 0, 0, 0.2);
 
 

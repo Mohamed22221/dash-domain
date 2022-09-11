@@ -1,0 +1,73 @@
+.topbar {
+ background-color: $white-color-1;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 105px;
+ z-index: 99;
+
+ .main-topbar {
+  .box {
+   height: 105px;
+   @extend %FlexRowBetween;
+
+   .right-topbar {
+    @extend %FlexDefault;
+    gap: 0 4rem;
+
+    .notification {
+     background-color: $bg-light-color;
+     position: relative;
+     @include circle(5rem);
+     cursor: pointer;
+
+     img {
+      @include center(50%, 50%)
+     }
+    }
+
+    .account {
+     @extend %FlexDefault;
+     gap: 0 2rem;
+
+     img {
+      width: 5rem;
+      height: 5rem;
+     }
+
+     h6 {
+      font-weight: $font-weight-medium;
+      padding: 0.4rem 0;
+      text-transform: capitalize;
+     }
+     p {
+      color: $info-color;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+     }
+    }
+
+    .more {
+     .css-137ul40-MuiButtonBase-root-MuiIconButton-root:hover{
+      background-color: transparent;
+     }
+     .profile{
+      font-size: 40px;
+     }
+     
+     .MuiButtonBase-root a{
+      margin: 20px;
+     }
+     
+     img {
+      width: 2.7rem;
+      cursor: pointer;
+
+     }
+
+    }
+   }
+  }
+ }
+}
