@@ -1,0 +1,76 @@
+/* (--1--) mixin responsive */
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+/* (--2--) mixin circle background*/
+@mixin circle($dimentions) {
+  border-radius: 50%;
+  width: $dimentions;
+  height: $dimentions;
+}
+
+/* (--3--) prefix*/
+@mixin prefix($key, $value) {
+  -webkit-#{$key}: #{$value};
+  -moz-#{$key}: #{$value};
+  -ms-#{$key}: #{$value};
+  -o-#{$key}: #{$value};
+  #{$key}: #{$value};
+  //@include prefix(transform, scale3d(2.5, 2, 1.5));
+}
+
+/* (--4--) absolute position all sides */
+@mixin abs-position ($top, $right, $bottom, $left) {
+  position: absolute; 
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+/* (--5--) absolute position center*/ 
+@mixin center($top , $left) {
+  position: absolute;
+  top: #{$top};
+  left: #{$left};
+  @include prefix(transform, translate(#{$left}, #{$top}));
+  //@include center(-50%,-50% )
+}
+
+/* (--6--) absolute position vertically center*/ 
+@mixin center-vertically($top) {
+  position: absolute;
+  top: #{$top};
+  @include prefix(transform, translateY(-#{$top}));
+  //@include center-vertically(-50%)
+}
+
+/* (--7--) absolute position vertically center*/ 
+@mixin center-horizonta($left) {
+  position: absolute;
+  left: #{$top};
+  @include prefix(transform, translateX(#{$left}));
+  //@include center-horizonta(-50%)
+}
+
+
+
+
+
+
+
+
+

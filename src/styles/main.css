@@ -1,0 +1,152 @@
+/* (--1--) mixin responsive */
+/* (--2--) mixin circle background*/
+/* (--3--) prefix*/
+/* (--4--) absolute position all sides */
+/* (--5--) absolute position center*/
+/* (--6--) absolute position vertically center*/
+/* (--7--) absolute position vertically center*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Preferred box-sizing value */
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  box-sizing: inherit;
+  font-weight: 500;
+  background-color: #F5F6FA;
+  font-family: "Poppins", sans-serif;
+}
+
+ul, menu, ol {
+  list-style: none;
+}
+
+body, button, h1, h2, h3, h4, h5, h6, input, nav, select, textarea, ul, ol, dl {
+  margin: 0;
+  padding: 0;
+}
+
+a, button, input, select, textarea {
+  background: none;
+  color: inherit;
+  border: none;
+  text-transform: none;
+  text-decoration: none;
+}
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1, .h1 {
+  font-size: 5rem;
+}
+
+h2, .h2 {
+  font-size: 4rem;
+}
+
+h3, .h3 {
+  font-size: 3rem;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.8rem;
+}
+
+h6, .h6 {
+  font-size: 1.6rem;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sub-container {
+  max-width: 160rem;
+  padding: 0 10rem;
+  margin: 15rem auto;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 300px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 20px 15px;
+}
+.sidebar .logo {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  padding: 15px 0;
+}
+.sidebar .links {
+  margin: 20px 0;
+}
+.sidebar .links a {
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: #A6A6A6;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.sidebar .links a svg {
+  color: #A6A6A6;
+  font-size: 32px;
+}
+.sidebar .links .active {
+  color: white;
+  background-color: #FBA30D;
+}
+.sidebar .links .active svg {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
