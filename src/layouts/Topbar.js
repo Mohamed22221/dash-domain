@@ -5,10 +5,10 @@ import account from "../assets/images/main/account.png"
 import more from "../assets/images/icons/more.svg"
 import AccountMenu from '../components/glopal/Menu';
 
-const Topbar = () => {
+const Topbar = ({showSide}) => {
   return (
     <nav className='topbar'>
-     <div className='main-topbar container-inline '>
+     <div className={showSide ? 'main-topbar container-inline ' : "main-topbar container-inline-sm"}>
       <div className='box'>
       <div className='input input__search'>
         <BsSearch/><input  placeholder='Search'  />

@@ -5,10 +5,19 @@
 }
 .container-inline{
   margin-inline:330px 40px ;
+  @extend %Ease;
+}
+.container-inline-sm{
+  margin-inline:150px 40px ;
+  @extend %Ease;
 }
 .sub-container {
   margin-inline:330px 40px ;
   margin-block:130px 40px ;
-
-
+  @extend %Ease;
+}
+.sub-container-sm {
+  margin-inline:150px 40px ;
+  margin-block:130px 40px ;
+  @extend %Ease;
 }

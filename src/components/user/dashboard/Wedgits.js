@@ -1,7 +1,8 @@
 import React from 'react'
+import { BiUpArrow } from 'react-icons/bi';
+
 import lineblue from "../../../assets/images/icons/lineblue.png"
 import linegreen from "../../../assets/images/icons/linegreen.png"
-
 import linered from "../../../assets/images/icons/linered.png"
 import lineyellow from "../../../assets/images/icons/lineyallow.png"
 
@@ -15,11 +16,11 @@ const Wedgits = () => {
     {/*left-wedgets */}
     <div className='left-wedgets h2'>
 
-    <div className='item-wedgets wedgets1'>
+    <div className='item-wedgets 1'>
       <div>
        <p >Website views</p>
        <h4>7102</h4>
-       <p>2,5%</p>
+       <p className='percentage percentage-1'><BiUpArrow/>2,5%</p>
       </div>
       <div className='img'>
        <img src={lineblue} />
@@ -27,9 +28,9 @@ const Wedgits = () => {
      </div>
      <div className='item-wedgets wedgets2'>
       <div>
-       <p >Website views</p>
+       <p >Sign up</p>
        <h4>7102</h4>
-       <p>2,5%</p>
+       <p className='percentage percentage-2'><BiUpArrow/>2,5%</p>
       </div>
       <div className='img'>
        <img src={linegreen} />
@@ -37,9 +38,9 @@ const Wedgits = () => {
      </div>
      <div className='item-wedgets wedgets3'>
       <div>
-       <p >Website views</p>
+       <p >Sign in</p>
        <h4>7102</h4>
-       <p>2,5%</p>
+       <p className='percentage percentage-3'><BiUpArrow/>2,5%</p>
       </div>
       <div className='img'>
        <img src={lineyellow} />
@@ -47,9 +48,9 @@ const Wedgits = () => {
      </div>
      <div className='item-wedgets wedgets4'>
       <div>
-       <p >Website views</p>
+       <p >Log out</p>
        <h4>7102</h4>
-       <p>2,5%</p>
+       <p className='percentage percentage-4'><BiUpArrow/>2,5%</p>
       </div>
       <div className='img'>
        <img src={linered} />

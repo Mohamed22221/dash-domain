@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.wedgits .main-wedgets .right-wedgets .item-right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets, .topbar .main-topbar .box {
+.traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets .percentage, .wedgits .main-wedgets .left-wedgets .item-wedgets p, .wedgits .main-wedgets .left-wedgets .item-wedgets h4, .wedgits .main-wedgets .left-wedgets .item-wedgets, .topbar .main-topbar .box {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.btn {
+.sidehide .arrow svg, .sidebar .arrow svg, .sub-container-sm, .sub-container, .container-inline-sm, .container-inline, .btn {
   transition: all 0.35s ease-in-out;
 }
 
@@ -208,6 +208,7 @@ p, a, button {
 }
 .input__search input {
   width: 100%;
+  padding: 10px;
 }
 .input__search input::-moz-placeholder {
   font-size: 1.9rem;
@@ -232,8 +233,17 @@ p, a, button {
   margin-inline: 330px 40px;
 }
 
+.container-inline-sm {
+  margin-inline: 150px 40px;
+}
+
 .sub-container {
   margin-inline: 330px 40px;
+  margin-block: 130px 40px;
+}
+
+.sub-container-sm {
+  margin-inline: 150px 40px;
   margin-block: 130px 40px;
 }
 
@@ -247,37 +257,83 @@ p, a, button {
   width: 300px;
   z-index: 100;
   padding: 20px 15px;
+  transition: width 0.3s ease-in-out;
 }
 .sidebar .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: transparent;
   padding: 15px 0;
+  transition: width 0.3s ease-in-out;
 }
 .sidebar .links {
   margin: 20px 0;
 }
-.sidebar .links a {
-  padding: 15px 60px;
+.sidebar .links .route {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-radius: 1rem;
-  cursor: pointer;
-  color: #A6A6A6;
-  font-weight: bold;
+  padding: 15px 25px;
   margin: 20px 0;
-  gap: 0 14px;
+}
+.sidebar .links p {
+  color: #A6A6A6;
+  margin-top: 10px;
+  transition: 0.5s;
 }
 .sidebar .links svg {
   font-size: 3rem;
+  margin-right: 10px;
+  color: #A6A6A6;
 }
 .sidebar .links .active {
-  color: white;
   background-color: #FBA30D;
+}
+.sidebar .links .active p {
+  color: white;
 }
 .sidebar .links .active svg {
   color: #ffffff;
+}
+.sidebar .arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 40px;
+  right: -16px;
+  background-color: #FBA30D;
+  padding: 5px;
+  border-radius: 50%;
+}
+.sidebar .arrow svg {
+  color: white;
+}
+
+.sidehide {
+  width: 120px;
+}
+.sidehide .logo img {
+  width: 100px;
+  transition: width 0.3s ease-in-out;
+}
+.sidehide .links p {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidehide .links .route {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.sidehide .links .route svg {
+  font-size: 3.5rem;
+  margin-right: 0;
+}
+.sidehide .arrow svg {
+  transform: rotate(180deg);
 }
 
 .topbar {
@@ -337,7 +393,7 @@ p, a, button {
   cursor: pointer;
 }
 
-.wedgits .main-wedgets .right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets {
+.traffic-overview, .wedgits .right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets {
   background-color: white;
   padding: 20px;
   border-radius: 1rem;
@@ -352,34 +408,110 @@ p, a, button {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
   position: relative;
-  gap: 20px;
+  gap: 2rem;
 }
 .wedgits .main-wedgets .left-wedgets .item-wedgets p, .wedgits .main-wedgets .left-wedgets .item-wedgets h4 {
-  padding: 10px 0;
+  padding: 1rem 0;
   font-weight: 600;
 }
 .wedgits .main-wedgets .left-wedgets .item-wedgets img {
-  margin-top: 55px;
+  margin-top: 5.5rem;
 }
-.wedgits .main-wedgets .right-wedgets {
-  margin-left: 20px;
-  width: 100%;
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage {
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
 }
-.wedgits .main-wedgets .right-wedgets h4 {
-  padding: 10px 0;
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage svg {
+  width: 1.5rem;
+  margin: 0.2rem 0;
+}
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-1 {
+  color: #287AFB;
+  background: rgba(40, 122, 251, 0.25);
+}
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-2 {
+  color: #0AB28B;
+  background: rgba(10, 178, 139, 0.25);
+}
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-3 {
+  color: #FBA30D;
+  background: rgba(251, 163, 13, 0.25);
+}
+.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-4 {
+  color: #E24A34;
+  background: rgba(226, 74, 52, 0.25);
+}
+.wedgits .right-wedgets {
+  margin-left: 2rem;
+  width: calc(100% - 2rem);
+}
+.wedgits .right-wedgets h4 {
+  padding: 1rem 0;
   font-weight: 600;
 }
-.wedgits .main-wedgets .right-wedgets p {
-  padding: 5px 0;
+.wedgits .right-wedgets p {
+  padding: 0.5rem 0;
   color: #A6A6A6;
   font-weight: 400;
 }
-.wedgits .main-wedgets .right-wedgets .item-right-wedgets {
-  margin: 15px 0;
-  border: 2px solid #D3D3FD;
+.wedgits .right-wedgets .item-right-wedgets {
+  margin: 1.5rem 0;
+  border: 0.2rem solid #D3D3FD;
   border-radius: 1rem;
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
 }
-.wedgits .main-wedgets .right-wedgets .item-right-wedgets h5, .wedgits .main-wedgets .right-wedgets .item-right-wedgets p {
-  padding: 7px 0;
+.wedgits .right-wedgets .item-right-wedgets h5, .wedgits .right-wedgets .item-right-wedgets p {
+  padding: 0.7rem 0;
+}
+
+.traffic-overview .header-overview {
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.traffic-overview .header-overview label {
+  font-size: 1.7rem;
+  margin: 14px;
+}
+.traffic-overview .item-about {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.traffic-overview .item-about h3, .traffic-overview .item-about p {
+  margin: 1rem;
+}
+.traffic-overview .item-about span {
+  font-size: 1rem;
+}
+.traffic-overview .item-about p {
+  font-size: 2.4rem;
+}
+.traffic-overview .daily, .traffic-overview .hourly {
+  margin: 20px 60px;
+}
+@media (max-width: 992px) {
+  .traffic-overview .daily, .traffic-overview .hourly {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .traffic-overview .daily, .traffic-overview .hourly {
+    margin: 20px 20px;
+  }
+}
+.traffic-overview .daily {
+  background: rgba(10, 178, 139, 0.2);
+  color: #0AB28B;
+}
+.traffic-overview .hourly {
+  background: rgba(40, 122, 251, 0.2);
+  color: #287AFB;
+}
+.traffic-overview .chart {
+  margin: 20px 0;
+}
+
+canvas {
+  width: 80px;
 }/*# sourceMappingURL=main.css.map */

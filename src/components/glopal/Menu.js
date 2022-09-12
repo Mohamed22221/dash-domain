@@ -96,7 +96,7 @@ export default function AccountMenu() {
 
       }}
      />
-     <a style={{ margin: "12px", color: "#A6A6A6" }}>Profile</a>
+     <a style={{ margin: "12px", color: "#A6A6A6" }}>Log out</a>
 
     </MenuItem>
 

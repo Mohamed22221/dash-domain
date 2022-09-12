@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
  background-color: $white-color-1;
  box-shadow: $box-shadow-light;
  position: fixed;
@@ -8,38 +8,108 @@
  width: 300px;
  z-index: 100;
  padding: 20px 15px;
- .logo{
+ transition: width 0.3s ease-in-out;
+
+ .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: transparent;
   padding: 15px 0;
+  transition: width 0.3s ease-in-out;
  }
- .links{
+
+ .links {
   margin: 20px 0;
-  a{
-   padding: 15px 60px;
+
+  .route {
    display: flex;
    justify-content: flex-start;
    align-items: center;
    border-radius: $border-radius-sm;
-   cursor: pointer;
-   color:$info-color;
-   font-weight: bold;
+   padding: 15px 25px;
    margin: 20px 0;
-   gap: 0 14px;
 
   }
-  svg{
 
-   font-size:$text-3xl ;
+  p {
+   color: $info-color;
+   margin-top: 10px;
+   transition: 0.5s;
   }
-  .active{
-   color: white;
+
+  svg {
+   font-size: $text-3xl ;
+   margin-right: 10px;
+   color: $info-color ;
+  }
+
+  .active {
    background-color: $primary-light-color;
-   svg{
-    color:$white-color ;
+
+   p {
+    color: white;
+
+   }
+
+   svg {
+    color: $white-color ;
    }
   }
 
  }
+ .arrow{
+  position: absolute;
+  cursor: pointer;
+  top: 40px;
+  right: -16px;
+  background-color: $primary-light-color;
+  padding: 5px;
+  border-radius: 50%;
+  svg{
+   @extend %Ease;
+   color: white;
+  }
+ }
+}
+//toggle width side
+.sidehide {
+ width: 120px;
+
+ .logo {
+  img {
+   width: 100px;
+   transition: width 0.3s ease-in-out;
+
+  }
+ }
+
+ .links {
+  p {
+   width: 0;
+   opacity: 0;
+   visibility: hidden;
+
+  }
+
+  .route {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0;
+
+   svg {
+    font-size: 3.5rem;
+    margin-right: 0;
+   }
+  }
+
+ }
+ .arrow{
+  svg{
+   @extend %Ease;
+   transform: rotate(180deg);
+  }
+ }
+
 }
