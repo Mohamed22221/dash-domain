@@ -12,11 +12,14 @@ import lineyellow from "../../../assets/images/icons/lineyallow.png"
 const Wedgits = () => {
  return (
   <div className='wedgits space-section'>
-   <div className='main-wedgets'>
+   <div className='row'>
     {/*left-wedgets */}
-    <div className='left-wedgets h2'>
+    <div className='left-wedgets col-12 col-xl-6  h2'>
+      <div className=' row mr-3 '>
 
-    <div className='item-wedgets 1'>
+
+      <div className='col-xl-6'>
+    <div className='item-wedgets wedgets1 m-3 '>
       <div>
        <p >Website views</p>
        <h4>7102</h4>
@@ -26,7 +29,10 @@ const Wedgits = () => {
        <img src={lineblue} />
       </div> 
      </div>
-     <div className='item-wedgets wedgets2'>
+     </div>
+     
+     <div className='col-xl-6'>
+    <div className='item-wedgets wedgets2 m-3 '>
       <div>
        <p >Sign up</p>
        <h4>7102</h4>
@@ -36,7 +42,10 @@ const Wedgits = () => {
        <img src={linegreen} />
       </div> 
      </div>
-     <div className='item-wedgets wedgets3'>
+     </div>
+
+     <div className='col-xl-6'>
+    <div className='item-wedgets wedgets3 m-3 '>
       <div>
        <p >Sign in</p>
        <h4>7102</h4>
@@ -46,7 +55,10 @@ const Wedgits = () => {
        <img src={lineyellow} />
       </div> 
      </div>
-     <div className='item-wedgets wedgets4'>
+     </div>
+     
+     <div className='col-xl-6'>
+    <div className='item-wedgets wedgets4 m-3 '>
       <div>
        <p >Log out</p>
        <h4>7102</h4>
@@ -56,9 +68,15 @@ const Wedgits = () => {
        <img src={linered} />
       </div> 
      </div>
+     </div>
+
+
+     </div>
     </div>
         {/*left-wedgets */}
-    <div className='right-wedgets h2'>
+
+      <div className='col-12 col-xl-6'>
+      <div className='right-wedgets h2 m-3'>
      <h4>My Domain</h4>
      <p className='info'>Upgrade or download this site</p>
      <div className='item-right-wedgets'>
@@ -81,7 +99,7 @@ const Wedgits = () => {
 
     </div>
     
-
+    </div>
    </div>
   </div>
  )

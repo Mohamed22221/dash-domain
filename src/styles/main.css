@@ -18,7 +18,23 @@
   align-items: center;
 }
 
-.traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets .percentage, .wedgits .main-wedgets .left-wedgets .item-wedgets p, .wedgits .main-wedgets .left-wedgets .item-wedgets h4, .wedgits .main-wedgets .left-wedgets .item-wedgets, .topbar .main-topbar .box {
+.wedgets-analytics .left-wedgets .counter, .wedgets-analytics .left-wedgets .timer {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -34,7 +50,7 @@
   align-items: center;
 }
 
-.sidehide .arrow svg, .sidebar .arrow svg, .sub-container-sm, .sub-container, .container-inline-sm, .container-inline, .btn {
+.sidehide .arrow svg, .sidehide .links p, .sidehide .logo img, .sidebar .arrow svg, .sidebar .links p, .sidebar .logo, .sidebar, .sub-container-sm, .sub-container, .container-inline-sm, .container-inline, .btn {
   transition: all 0.35s ease-in-out;
 }
 
@@ -163,23 +179,24 @@ p, a, button {
 
 .btn {
   padding: 10px 35px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: 1rem;
   text-transform: capitalize;
+  margin: 10px;
 }
 .btn__primary {
   background-color: #FBA30D;
   text-align: center;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #FBA30D;
   width: auto;
 }
 .btn__primary:hover {
-  background-color: white;
-  border: 1px solid #FBA30D;
-  color: #FBA30D;
+  background-color: white !important;
+  border: 1px solid #FBA30D !important;
+  color: #FBA30D !important;
 }
 .btn__secound {
   background-color: white;
@@ -188,9 +205,18 @@ p, a, button {
   color: #FBA30D;
 }
 .btn__secound:hover {
-  background-color: #FBA30D;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  background-color: #FBA30D !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.three-buttons {
+  background-color: #F5F6FA;
+  padding: 8px;
+  border-radius: 2rem;
+}
+.three-buttons button {
+  margin: 4px;
 }
 
 .input {
@@ -232,19 +258,39 @@ p, a, button {
 .container-inline {
   margin-inline: 330px 40px;
 }
+@media (max-width: 768px) {
+  .container-inline {
+    margin-inline: 15px 15px;
+  }
+}
 
 .container-inline-sm {
   margin-inline: 150px 40px;
+}
+@media (max-width: 768px) {
+  .container-inline-sm {
+    margin-inline: 15px 15px;
+  }
 }
 
 .sub-container {
   margin-inline: 330px 40px;
   margin-block: 130px 40px;
 }
+@media (max-width: 768px) {
+  .sub-container {
+    margin-inline: 15px 15px;
+  }
+}
 
 .sub-container-sm {
   margin-inline: 150px 40px;
   margin-block: 130px 40px;
+}
+@media (max-width: 768px) {
+  .sub-container-sm {
+    margin-inline: 15px 15px;
+  }
 }
 
 .sidebar {
@@ -257,7 +303,6 @@ p, a, button {
   width: 300px;
   z-index: 100;
   padding: 20px 15px;
-  transition: width 0.3s ease-in-out;
 }
 .sidebar .logo {
   display: flex;
@@ -265,7 +310,7 @@ p, a, button {
   align-items: center;
   background-color: transparent;
   padding: 15px 0;
-  transition: width 0.3s ease-in-out;
+  height: 144px;
 }
 .sidebar .links {
   margin: 20px 0;
@@ -281,7 +326,6 @@ p, a, button {
 .sidebar .links p {
   color: #A6A6A6;
   margin-top: 10px;
-  transition: 0.5s;
 }
 .sidebar .links svg {
   font-size: 3rem;
@@ -313,9 +357,11 @@ p, a, button {
 .sidehide {
   width: 120px;
 }
+.sidehide .logo {
+  height: 144px;
+}
 .sidehide .logo img {
   width: 100px;
-  transition: width 0.3s ease-in-out;
 }
 .sidehide .links p {
   width: 0;
@@ -329,7 +375,6 @@ p, a, button {
   padding: 10px 0;
 }
 .sidehide .links .route svg {
-  font-size: 3.5rem;
   margin-right: 0;
 }
 .sidehide .arrow svg {
@@ -393,59 +438,55 @@ p, a, button {
   cursor: pointer;
 }
 
-.traffic-overview, .wedgits .right-wedgets, .wedgits .main-wedgets .left-wedgets .item-wedgets {
+.main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter, .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
   padding: 20px;
   border-radius: 1rem;
 }
 
-.wedgits .main-wedgets {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-}
-.wedgits .main-wedgets .left-wedgets {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  width: 100%;
+.wedgits .left-wedgets {
   position: relative;
-  gap: 2rem;
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets p, .wedgits .main-wedgets .left-wedgets .item-wedgets h4 {
+.wedgits .left-wedgets .item-wedgets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4 {
   padding: 1rem 0;
   font-weight: 600;
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets img {
+.wedgits .left-wedgets .item-wedgets img {
   margin-top: 5.5rem;
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage {
+.wedgits .left-wedgets .item-wedgets .percentage {
   width: 8rem;
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 0.8rem;
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage svg {
+.wedgits .left-wedgets .item-wedgets .percentage svg {
   width: 1.5rem;
   margin: 0.2rem 0;
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-1 {
+.wedgits .left-wedgets .item-wedgets .percentage-1 {
   color: #287AFB;
   background: rgba(40, 122, 251, 0.25);
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-2 {
+.wedgits .left-wedgets .item-wedgets .percentage-2 {
   color: #0AB28B;
   background: rgba(10, 178, 139, 0.25);
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-3 {
+.wedgits .left-wedgets .item-wedgets .percentage-3 {
   color: #FBA30D;
   background: rgba(251, 163, 13, 0.25);
 }
-.wedgits .main-wedgets .left-wedgets .item-wedgets .percentage-4 {
+.wedgits .left-wedgets .item-wedgets .percentage-4 {
   color: #E24A34;
   background: rgba(226, 74, 52, 0.25);
 }
 .wedgits .right-wedgets {
-  margin-left: 2rem;
-  width: calc(100% - 2rem);
+  height: 93%;
 }
 .wedgits .right-wedgets h4 {
   padding: 1rem 0;
@@ -457,10 +498,10 @@ p, a, button {
   font-weight: 400;
 }
 .wedgits .right-wedgets .item-right-wedgets {
-  margin: 1.5rem 0;
   border: 0.2rem solid #D3D3FD;
   border-radius: 1rem;
   padding: 1.5rem 2.5rem;
+  margin-block: 1rem;
 }
 .wedgits .right-wedgets .item-right-wedgets h5, .wedgits .right-wedgets .item-right-wedgets p {
   padding: 0.7rem 0;
@@ -511,7 +552,68 @@ p, a, button {
 .traffic-overview .chart {
   margin: 20px 0;
 }
+.traffic-overview .mixed-chart .apx-legend-position-bottom {
+  display: none;
+}
 
-canvas {
-  width: 80px;
+.main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter, .wedgets-analytics .left-wedgets .timer, .wedgits .left-wedgets .item-wedgets, .wedgits .right-wedgets, .traffic-overview {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.wedgets-analytics .left-wedgets .timer {
+  flex-direction: column;
+}
+.wedgets-analytics .left-wedgets .timer img {
+  margin-block: 2rem;
+}
+.wedgets-analytics .left-wedgets .timer h4, .wedgets-analytics .left-wedgets .timer p {
+  padding-block: 1rem;
+}
+.wedgets-analytics .left-wedgets .timer p {
+  font-size: 2.1rem;
+}
+.wedgets-analytics .left-wedgets .timer span {
+  color: #FBA30D;
+}
+.wedgets-analytics .left-wedgets .counter {
+  height: calc(50% - 22px);
+}
+.wedgets-analytics .left-wedgets .counter img {
+  padding: 2rem;
+}
+.wedgets-analytics .right-wedgets {
+  height: calc(100% - 35px);
+}
+.wedgets-analytics .right-wedgets canvas {
+  height: 300px !important;
+  width: 100%;
+}
+
+.main-vps-serveses {
+  margin: 0 2.2rem;
+}
+.main-vps-serveses .body-vbs .item-vbs {
+  background-color: #F5F6FA;
+  border-radius: 1rem;
+  border: 1px solid #D3D3FD;
+  padding: 20px 40px;
+  margin: 10px;
+}
+.main-vps-serveses .body-vbs .item-vbs p {
+  color: #868E96;
+}
+.main-vps-serveses .body-vbs .item-vbs h5 {
+  font-weight: 500;
+}
+.main-vps-serveses .body-vbs .vbs-access a, .main-vps-serveses .body-vbs .vbs-info a {
+  color: #FBA30D;
+  text-decoration: underline;
+}
+.main-vps-serveses .body-vbs .vbs-access .root, .main-vps-serveses .body-vbs .vbs-info .root {
+  background: rgba(10, 178, 139, 0.2);
+  border-radius: 4px;
+  color: #0AB28B;
+  padding: 8px;
 }/*# sourceMappingURL=main.css.map */

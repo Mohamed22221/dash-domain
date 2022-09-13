@@ -8,15 +8,15 @@
  width: 300px;
  z-index: 100;
  padding: 20px 15px;
- transition: width 0.3s ease-in-out;
-
+ @extend %Ease;
  .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   padding: 15px 0;
-  transition: width 0.3s ease-in-out;
+  height: 144px;
+  @extend %Ease;
  }
 
  .links {
@@ -35,7 +35,7 @@
   p {
    color: $info-color;
    margin-top: 10px;
-   transition: 0.5s;
+   @extend %Ease;
   }
 
   svg {
@@ -77,9 +77,10 @@
  width: 120px;
 
  .logo {
+  height: 144px;
   img {
    width: 100px;
-   transition: width 0.3s ease-in-out;
+   @extend %Ease;
 
   }
  }
@@ -89,7 +90,7 @@
    width: 0;
    opacity: 0;
    visibility: hidden;
-
+   @extend %Ease;
   }
 
   .route {
@@ -99,7 +100,6 @@
    padding: 10px 0;
 
    svg {
-    font-size: 3.5rem;
     margin-right: 0;
    }
   }

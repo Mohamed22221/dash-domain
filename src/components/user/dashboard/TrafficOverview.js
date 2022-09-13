@@ -1,9 +1,10 @@
 import React from 'react'
+import AbexPar from '../analytics/AbexPar'
 import BarChart from './barChart'
 
 const TrafficOverview = () => {
  return (
-  <div className='traffic-overview'>
+  <div className='traffic-overview mx-3 space-section'>
    <div className='header-overview'>
     <h4>Traffic overview</h4>
     <div>
@@ -32,7 +33,7 @@ const TrafficOverview = () => {
     </div>
     <div className='col-12 col-lg-6 col-xl-7'>
      <div className='item-about chart'>
-   <BarChart />
+    <AbexPar />
      </div>
     </div>
 

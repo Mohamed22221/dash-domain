@@ -22,61 +22,59 @@ percentage-4 : (
   bg : rgba(226, 74, 52, 0.25)
 )
 );
+
 //sec 1 => page dashboard "wedgets"
 .wedgits {
- .main-wedgets {
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(50%, 1fr) );
+
 
   .left-wedgets {
-   display: grid;
-   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-   width: 100%;
+
    position: relative;
-   gap: 2rem;
-   .item-wedgets{
-    @extend %FlexRowBetween;
-    @extend %default-item;
 
-
-    p,h4{
-      @extend %FlexRowBetween;
-     padding: 1rem 0;
-     font-weight: $font-weight-medium;
-    
-    }
-    img{
-     margin-top: 5.5rem;
-    }
-    .percentage{
-      @extend %FlexRowBetween;
-      width: 8rem;
-
-      padding: 1rem;
-      border-radius: $border-radius-sm;
-      margin-top: 0.8rem;
-      svg{
-        width: 1.5rem;
-        margin: 0.2rem 0;
+    .item-wedgets{
+      @extend %default-item;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p,h4{
+        @extend %FlexRowBetween;
+       padding: 1rem 0;
+       font-weight: $font-weight-medium;
+      
+      }
+      img{
+       margin-top: 5.5rem;
+      }
+      .percentage{
+        @extend %FlexRowBetween;
+        width: 8rem;
+  
+        padding: 1rem;
+        border-radius: $border-radius-sm;
+        margin-top: 0.8rem;
+        svg{
+          width: 1.5rem;
+          margin: 0.2rem 0;
+        }
+      }
+      @each $item , $value in $percentages {
+        .#{$item}{
+          color: map-get($value , colors );
+          background: map-get($value , bg );
+        }
+       
       }
     }
-    @each $item , $value in $percentages {
-      .#{$item}{
-        color: map-get($value , colors );
-        background: map-get($value , bg );
-      }
-     }
-    }
+
     
 
    }
    
-  }
+  
 //right wedget 
   .right-wedgets {
    @extend %default-item;
-   margin-left: 2rem;
-   width: calc(100% - 2rem) ;
+   height: 93%;
 
    h4{
     padding: 1rem 0;
@@ -89,10 +87,10 @@ percentage-4 : (
    }
    .item-right-wedgets{
     @extend %FlexRowBetween;
-    margin: 1.5rem 0;
     border:0.2rem solid $danger-light-color ;
     border-radius:$border-radius-sm ;
     padding: 1.5rem 2.5rem;
+    margin-block: 1rem;
     h5 , p{
      padding: 0.7rem 0;
     }
@@ -146,8 +144,11 @@ percentage-4 : (
   .chart{
     margin: 20px 0;
   }
+.mixed-chart{
+
+  .apx-legend-position-bottom{
+    display: none;
+  }
 
 }
-canvas{
-  width: 80px;
 }

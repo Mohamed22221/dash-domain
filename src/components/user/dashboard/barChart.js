@@ -1,15 +1,8 @@
 import React from 'react'
-import {
- Chart as ChartJS,
- CategoryScale,
- LinearScale,
- BarElement,
- Title,
- Tooltip,
- Legend,
-} from 'chart.js';
+import {Chart as ChartJS,CategoryScale,LinearScale,BarElement,Title,Tooltip,Legend,} from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import faker from 'faker';
+import { borderColor } from '@mui/system';
 
 ChartJS.register(
  CategoryScale,
@@ -23,6 +16,7 @@ ChartJS.register(
 export const options = {
  responsive: true,
  plugins: {
+  
    legend: {
      position: 'top' ,
    },
@@ -36,12 +30,14 @@ export const data = {
  labels,
  datasets: [
    {
-     label: 'Dataset 1',
+     label: 'Avaliable',
      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
      backgroundColor: '#FBA30D',
+     borderRadius : "40px",
+     borderColor:"red"
    },
    {
-     label: 'Dataset 2',
+     label: 'Not Avaliable',
      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
      backgroundColor: '2A2E33',
    },

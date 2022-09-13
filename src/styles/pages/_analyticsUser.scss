@@ -1,0 +1,88 @@
+%default-item{
+ background-color: white;
+ padding: 2rem;
+ border-radius: $border-radius-sm;
+}
+.wedgets-analytics{
+ //left wegdets 
+ .left-wedgets {
+
+   .counter , .timer {
+    @extend %FlexRowCenter;
+    @extend %default-item;
+   }
+    //left wegdets analytics timer
+  .timer{
+
+   flex-direction: column;
+
+   img{
+    margin-block: 2rem;
+   }
+   h4,p{
+    padding-block: 1rem;
+
+   }
+   p{
+    font-size: 2.1rem;
+   }
+   span{
+    color: $primary-light-color;
+   }
+  }
+  //left wegdets analytics timer
+  .counter{
+   height: calc(50% - 22px) ;
+   img{
+    padding: 2rem;
+   }
+  }
+ }
+
+ .right-wedgets{
+  @extend %default-item;
+  height: calc(100% - 35px) ;
+  canvas{
+   height: 300px !important;
+   width: 100%;
+  }
+ }
+}
+//VPS Servers
+.main-vps-serveses{
+ @extend %default-item;
+ margin: 0 2.2rem;
+ .head-vps{
+  @extend %FlexRowBetween;
+ }
+ .body-vbs{
+  .item-vbs{
+   @extend %FlexRowBetween;
+   background-color: $bg-light-color;
+   border-radius: $border-radius-sm;
+   border: 1px solid $danger-light-color;
+   padding: 20px 40px;
+   margin: 10px ;
+   p{
+    color:$info-color-2;
+   }
+   h5{
+    font-weight: 500;
+   }
+  }
+.vbs-access ,.vbs-info{
+ a{
+  color: $primary-light-color;
+  text-decoration: underline;
+ }
+ .root{
+  background: rgba(10, 178, 139, 0.2);border-radius: 4px;
+color: #0AB28B;
+
+padding: 8px;
+
+ }
+}
+
+ }
+}

@@ -24,6 +24,14 @@
 
 
 }
+%FlexRowEvenly{
+
+  @include prefix(display, flex);
+  @include prefix(justify-content, space-evenly);
+  @include prefix(align-items, center);
+
+
+}
 
 %Ease {
   @include prefix(transition , all 0.35s ease-in-out);
