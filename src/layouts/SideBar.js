@@ -8,9 +8,15 @@ import { HiOutlineChat } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
 
 
-const SideBar = ({showSide ,setShowSide}) => {
+const SideBar = ({showSide ,setShowSide ,showSideSm}) => {
   return (
-    <nav className={showSide ? "sidebar" : "sidebar sidehide" }  >
+    <nav 
+    className={
+      showSide && showSideSm  ? "sidebar hide" 
+      :showSideSm === false ? "sidebar show"  : "sidebar sidehide " 
+       
+    }  
+    >
      <div >
       <div className='logo'>
         <a href='#'><img src={logo} /></a>

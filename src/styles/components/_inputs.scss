@@ -22,12 +22,22 @@
   font-size: 1.9rem;
   color: $info-color;
  }
+ &:focus{
+  background-color: #fff;
+    border-color: #fba30d;
+    box-shadow: 0 10px 50px rgb(251 163 13 / 20%);
+ }
 }
 
 &__select{
  border:1px solid $info-color;
  font-size: 1.9rem;
  color: $info-color;
+ &:focus{
+  background-color: #fff;
+    border-color: #fba30d;
+    box-shadow: 0 10px 50px rgb(251 163 13 / 20%);
+ }
 
 }
 

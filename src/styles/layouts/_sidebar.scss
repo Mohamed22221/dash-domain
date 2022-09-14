@@ -4,11 +4,16 @@
  position: fixed;
  left: 0;
  bottom: 0;
- height: 100vh;
+ height: 100%;
  width: 300px;
  z-index: 100;
  padding: 20px 15px;
  @extend %Ease;
+ 
+ @include for-tablet-portrait-up{
+  z-index: 98;
+  
+ }
  .logo {
   display: flex;
   justify-content: center;
@@ -70,6 +75,9 @@
    @extend %Ease;
    color: white;
   }
+  @include for-tablet-portrait-up{
+   display: none;
+  }
  }
 }
 //toggle width side
@@ -110,6 +118,19 @@
    @extend %Ease;
    transform: rotate(180deg);
   }
+ }
+
+}
+//show & hide sidebar
+.hide{
+ @include for-tablet-portrait-up{
+  transform: translateX(-380px);
+ }
+
+}
+.show{
+ @include for-tablet-portrait-up{
+  transform: translateX(0px);
  }
 
 }

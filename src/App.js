@@ -7,11 +7,13 @@ import UserRoutes from "./routes/UserRoutes";
 function App() {
 
   const [showSide , setShowSide] = useState(true)
+  const [showSideSm , setShowSideSm] = useState(true)
+
   return (
     <div >
       
-      <SideBar showSide={showSide} setShowSide={setShowSide} />
-      <Topbar showSide={showSide} />
+      <SideBar showSide={showSide} setShowSide={setShowSide} showSideSm={showSideSm} />
+      <Topbar showSide={showSide} showSideSm={showSideSm} setShowSideSm={setShowSideSm}  />
       <UserRoutes showSide={showSide}/>
 
 
