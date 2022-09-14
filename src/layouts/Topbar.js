@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+//icons
 import { BsSearch } from 'react-icons/bs';
 import { FiSearch } from 'react-icons/fi';
 import { MdOutlineClose } from 'react-icons/md';
-
-
+import { RiMenu2Fill } from 'react-icons/ri';
+//images
 import notification from "../assets/images/icons/notification.svg"
 import account from "../assets/images/main/account.png"
+//combonent
 import AccountMenu from '../components/glopal/Menu';
-import { RiMenu2Fill } from 'react-icons/ri';
+
 
 
 const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
@@ -16,6 +18,7 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
     <nav className='topbar '>
       <div className={showSide ? 'main-topbar container-inline ' : "main-topbar container-inline-sm"}>
         <div className='box'>
+          {/*search & menu par */}
           <div className='d-flex align-items-center'>
             <RiMenu2Fill className='menu' onClick={() => {
               setShowSideSm(!showSideSm)
@@ -30,6 +33,7 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
               <BsSearch /><input placeholder='Search' />
             </div>
           </div>
+          {/*notification & account */}
           <div className='right-topbar'>
             <div className='notification'>
               <img src={notification} alt="notification" />

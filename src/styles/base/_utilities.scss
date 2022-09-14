@@ -29,3 +29,27 @@
 .space-section{
   margin: 35px 0;
 }
+.item-bg {
+  @extend %FlexRowBetween;
+  background-color: $bg-light-color;
+  border-radius: $border-radius-sm;
+  border: 1px solid $danger-light-color;
+  padding: 20px 40px;
+  margin: 10px;
+
+  p {
+    color: $info-color-2;
+  }
+
+  h5 {
+    font-weight: 500;
+  }
+   .root {
+    background: rgba(10, 178, 139, 0.2);
+    border-radius: 4px;
+    color: #0AB28B;
+
+    padding: 8px;
+
+  }
+}

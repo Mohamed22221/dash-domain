@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box {
+.main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -176,6 +176,26 @@ p, a, button {
 
 .space-section {
   margin: 35px 0;
+}
+
+.item-bg {
+  background-color: #F5F6FA;
+  border-radius: 1rem;
+  border: 1px solid #D3D3FD;
+  padding: 20px 40px;
+  margin: 10px;
+}
+.item-bg p {
+  color: #868E96;
+}
+.item-bg h5 {
+  font-weight: 500;
+}
+.item-bg .root {
+  background: rgba(10, 178, 139, 0.2);
+  border-radius: 4px;
+  color: #0AB28B;
+  padding: 8px;
 }
 
 .btn {
@@ -579,7 +599,7 @@ p, a, button {
   }
 }
 
-.main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
+.domain-overview, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
   padding: 20px;
@@ -698,13 +718,6 @@ p, a, button {
   display: none;
 }
 
-.main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
-.wedgets-analytics .left-wedgets .timer, .wedgits .left-wedgets .item-wedgets, .wedgits .right-wedgets, .traffic-overview {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-}
-
 .wedgets-analytics .left-wedgets .timer {
   flex-direction: column;
 }
@@ -756,10 +769,7 @@ p, a, button {
   color: #FBA30D;
   text-decoration: underline;
 }
-.main-vps-serveses .body-vbs .vbs-access .root,
-.main-vps-serveses .body-vbs .vbs-info .root {
-  background: rgba(10, 178, 139, 0.2);
-  border-radius: 4px;
-  color: #0AB28B;
-  padding: 8px;
+
+.domain-overview h4 {
+  padding: 2rem 0;
 }/*# sourceMappingURL=main.css.map */
