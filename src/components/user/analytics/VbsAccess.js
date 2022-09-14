@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FormPlanAccess from './FormPlanAccess'
 
 const VbsAccess = () => {
+  const [toggleAccess , setToggleAccess] = useState(true)
+
   return (
    <div className='vbs-access'>
+    { toggleAccess ?
+    <div> 
    <div className='item-vbs'>
     <p>SSH IP</p>
     <h5>82.180.132.85</h5>
@@ -28,14 +33,16 @@ const VbsAccess = () => {
     <h5>ssh root@82.180.132.85</h5>
    </div>
    <div className='buttons d-flex justify-content-end '>
-   <button className='btn btn__secound' >Change Plan</button>
+   <button className='btn btn__secound' onClick={() =>setToggleAccess(false)} >Change Plan</button>
    <button className='btn btn__primary' >Stop VPS</button>
 
 
 
 
    </div>
-
+   
+   </div>
+   : <FormPlanAccess setToggleAccess={setToggleAccess} />}
   </div>
   )
 }

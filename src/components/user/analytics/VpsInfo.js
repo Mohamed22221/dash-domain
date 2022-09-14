@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FormPlaneInfo from './FormPlaneInfo'
 
 const VpsInfo = () => {
+  const [toggleInfo , setToggleInfo] = useState(true)
+
   return (
-   <div className='vbs-access'>
+   <div className='vbs-info'>
+    { toggleInfo ?
+    <div>
    <div className='item-vbs'>
     <p>IP Address</p>
     <h5>82.180.132.85</h5>
@@ -28,14 +33,12 @@ const VpsInfo = () => {
     <h5>Egypt</h5>
    </div>
    <div className='buttons d-flex justify-content-end '>
-   <button className='btn btn__secound' >Change Plan</button>
+   <button className='btn btn__secound' onClick={() =>setToggleInfo(false)} >Change Plan</button>
    <button className='btn btn__primary' >Stop VPS</button>
-
-
-
-
    </div>
-
+   </div>
+  :<FormPlaneInfo setToggleInfo={setToggleInfo} />
+}
   </div>
   )
 }

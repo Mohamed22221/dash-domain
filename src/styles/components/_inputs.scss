@@ -2,6 +2,34 @@
  padding: 15px 20px;
  border-radius:$border-radius-sm ;
  @extend %FlexDefault;
+ &__box{
+  display: flex;
+  flex-direction: column;
+  margin: 30px ;
+  width: 380px;
+ }
+ &__label {
+  color: $primary-dark-color;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-weight: 600;
+ }
+&__field {
+ border:1px solid $info-color;
+ font-size: 1.9rem;
+ color: $info-color;
+ &::placeholder{
+  font-size: 1.9rem;
+  color: $info-color;
+ }
+}
+
+&__select{
+ border:1px solid $info-color;
+ font-size: 1.9rem;
+ color: $info-color;
+
+}
 
  &__search{
   background-color: $bg-light-color;
@@ -21,4 +49,5 @@
   }
 
  }
+
 }
