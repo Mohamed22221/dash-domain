@@ -44,11 +44,14 @@
   h5 {
     font-weight: 500;
   }
+  a {
+    color: $primary-light-color;
+    text-decoration: underline;
+  }
    .root {
     background: rgba(10, 178, 139, 0.2);
     border-radius: 4px;
     color: #0AB28B;
-
     padding: 8px;
 
   }

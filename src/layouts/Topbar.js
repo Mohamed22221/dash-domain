@@ -20,11 +20,20 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
         <div className='box'>
           {/*search & menu par */}
           <div className='d-flex align-items-center'>
-            <RiMenu2Fill className='menu' onClick={() => {
-              setShowSideSm(!showSideSm)
+            {showSideSm ? <RiMenu2Fill className='menu' onClick={() => {
+              setShowSideSm(false)
+              setToggleSearch(true)
+            }
+            } /> :
+            <MdOutlineClose className='menu' onClick={() => {
+              setShowSideSm(true)
               setToggleSearch(true)
             }
             } />
+            
+            
+            }
+
             {toggleSearch ?
               <FiSearch className='search-icon' onClick={() => setToggleSearch(false)} />
               : <MdOutlineClose className='search-icon' onClick={() => setToggleSearch(true)} />

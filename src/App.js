@@ -12,7 +12,7 @@ function App() {
   return (
     <div >
       
-      <SideBar showSide={showSide} setShowSide={setShowSide} showSideSm={showSideSm} />
+      <SideBar showSide={showSide} setShowSide={setShowSide} showSideSm={showSideSm} setShowSideSm={setShowSideSm} />
       <Topbar showSide={showSide} showSideSm={showSideSm} setShowSideSm={setShowSideSm}  />
       <UserRoutes showSide={showSide}/>
 

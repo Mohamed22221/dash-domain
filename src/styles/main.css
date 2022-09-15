@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .item-bg {
+.dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -190,6 +190,10 @@ p, a, button {
 }
 .item-bg h5 {
   font-weight: 500;
+}
+.item-bg a {
+  color: #FBA30D;
+  text-decoration: underline;
 }
 .item-bg .root {
   background: rgba(10, 178, 139, 0.2);
@@ -372,6 +376,7 @@ p, a, button {
 @media (max-width: 768px) {
   .sidebar {
     z-index: 98;
+    width: 300px;
   }
 }
 .sidebar .logo {
@@ -426,6 +431,19 @@ p, a, button {
 @media (max-width: 768px) {
   .sidebar .arrow {
     display: none;
+  }
+}
+@media (max-width: 599px) {
+  .sidebar {
+    width: 250px;
+  }
+  .sidebar .logo {
+    margin-top: 45px;
+    height: 120px;
+  }
+  .sidebar .links .route {
+    padding: 7px 25px;
+    margin: 5px;
   }
 }
 
@@ -599,7 +617,8 @@ p, a, button {
   }
 }
 
-.domain-overview, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
+.domain-overview,
+.dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
   padding: 20px;
@@ -764,12 +783,36 @@ p, a, button {
 .main-vps-serveses .body-vbs .item-vbs h5 {
   font-weight: 500;
 }
-.main-vps-serveses .body-vbs .vbs-access a,
-.main-vps-serveses .body-vbs .vbs-info a {
-  color: #FBA30D;
-  text-decoration: underline;
-}
 
-.domain-overview h4 {
-  padding: 2rem 0;
+.dns-Tabel .flow {
+  width: 100%;
+  overflow-x: auto;
+}
+.dns-Tabel .body-dns {
+  margin: 4rem 1.6rem;
+}
+.dns-Tabel .body-dns .table > :not(caption) > * > * {
+  padding: 1.8rem 1.5rem;
+  border-bottom-width: 0rem;
+}
+.dns-Tabel .body-dns .title {
+  font-size: 1.6rem;
+  color: #A6A6A6;
+  font-weight: bold;
+}
+.dns-Tabel .body-dns .title-add {
+  color: #FBA30D;
+  cursor: pointer;
+}
+.dns-Tabel .body-dns .table-hover {
+  background-color: #2A2E33;
+  color: white;
+}
+.dns-Tabel .body-dns .primary {
+  background-color: #F5F6FA;
+  color: #A6A6A6;
+  font-size: 1.5rem;
+}
+.dns-Tabel .body-dns .primary svg {
+  font-size: 28px;
 }/*# sourceMappingURL=main.css.map */

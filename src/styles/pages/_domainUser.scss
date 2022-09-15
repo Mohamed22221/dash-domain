@@ -1,7 +1,58 @@
-.domain-overview{
+.domain-overview,
+.dns-Tabel {
  @extend %default-item;
- h4{
-   padding: 2rem 0;
+
+}
+
+.dns-Tabel {
+ .flow {
+  width: 100%;
+  overflow-x: auto;
+ }
+
+ .head-dns {
+  @extend %FlexRowBetween
+ }
+
+ .body-dns {
+  margin: 4rem 1.6rem;
+
+  .table>:not(caption)>*>* {
+   padding: 1.8rem 1.5rem;
+   border-bottom-width: 0rem;
+
+
+   
+  }
+
+  .title{
+   font-size: 1.6rem;
+   color: $info-color;
+   font-weight: bold;
+  }
+  .title-add{
+   color: $primary-light-color;
+   cursor: pointer;
+  }
+  .table-hover{
+   background-color: $primary-dark-color;
+   color: white;
+  }
+
+
+  .primary{
+   background-color: #F5F6FA;
+   color: $info-color;
+   font-size: 1.5rem;
+   svg{
+    font-size: 28px;
+   }
+
+  }
+
+
+
+
  }
 
 }

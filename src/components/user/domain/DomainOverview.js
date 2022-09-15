@@ -3,10 +3,14 @@ import React from 'react'
 const DomainOverview = () => {
   return (
     <div className='domain-overview space-section'>
-     <h4>Domain overview</h4>
+     <h4 className='py-4'>Domain overview</h4>
        <div className='item-bg'>
       <p>Domain name</p>
-      <h5>anahi.ns.cloudflare.com</h5>
+      <div className='d-flex align-items-center'>
+      <h5 className='mx-5'>anahi.ns.cloudflare.com</h5>
+      <a className='mx-3'>change</a>
+      </div>
+
      </div>
      <div className='item-bg'>
       <p>Status</p>
