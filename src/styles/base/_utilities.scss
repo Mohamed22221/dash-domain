@@ -55,4 +55,16 @@
     padding: 8px;
 
   }
+    //start responsive phone item-bg
+    @include for-phone-only {
+      margin: 1.5rem 0 ;
+      padding: 20px 15px;
+      p{
+        font-size: 1.5rem;
+      }
+      h5{
+        font-size: 1.5rem;
+      }
+    }
+    //end responsive phone item-bg
 }

@@ -10,7 +10,7 @@ const VpsServers = () => {
  return (
   <div className='main-vps-serveses '>
    <div className='head-vps'>
-    <h4>VPS Servers</h4>
+    <h4 className='my-3'>VPS Servers</h4>
     <ToggleThreeBottons
      name1="VPS info"
      name2="VPS Access"

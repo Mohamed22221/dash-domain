@@ -22,7 +22,8 @@
   margin-block:130px 40px ;
   @extend %Ease;
   @include for-tablet-portrait-up{
-    margin-inline:15px 15px ;
+    margin-inline:15px 10px ;
+    margin-block:110px 20px ;
   }
 }
 .sub-container-sm {

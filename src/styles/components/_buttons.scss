@@ -34,6 +34,12 @@
    color: $white-color !important;
   }
  }
+  //start responsive phone item-bg
+  @include for-phone-only {
+   padding: 10px 15px;
+   margin: 8px;
+  }
+  //end responsive phone item-bg
 }
 .three-buttons{
  background-color: $bg-light-color;
@@ -42,5 +48,17 @@
  button{
   margin: 4px;
  }
- 
+ //start responsive phone item-bg
+ @include for-phone-only {
+  margin: 10px 0 0 0;
+  padding: 5px 2px;
+  width: 100%;
+  button{
+   font-size: 14px;
+   padding: 8px 8px;
+   margin: 2px;
+  }
+
+ }
+ //end responsive phone item-bg
 }

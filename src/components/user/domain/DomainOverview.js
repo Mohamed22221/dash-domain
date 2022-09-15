@@ -6,9 +6,9 @@ const DomainOverview = () => {
      <h4 className='py-4'>Domain overview</h4>
        <div className='item-bg'>
       <p>Domain name</p>
-      <div className='d-flex align-items-center'>
-      <h5 className='mx-5'>anahi.ns.cloudflare.com</h5>
-      <a className='mx-3'>change</a>
+      <div className='d-flex justify-content-end flex-wrap align-items-center'>
+      <h5 className='mx-sm-0 mx-md-5'>anahi.ns.cloudflare.com</h5>
+      <a className='mx-2 mx-md-3'>change</a>
       </div>
 
      </div>

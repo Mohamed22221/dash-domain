@@ -6,10 +6,10 @@ import BarChart from '../dashboard/barChart'
 const Wedgits = () => {
  return (
   <div className='wedgets-analytics space-section row'>
-   <div className='col-12 col-xl-6'>
-    <div className='left-wedgets row mx-3'>
+   <div className='col-12 col-xl-6 p-0'>
+    <div className='left-wedgets row mx-md-3'>
      <div className='col-12 col-xl-6'>
-      <div className='timer my-4'>
+      <div className='timer my-md-4'>
        <h4>CPU Daily Usage</h4>
        <img src={timer} alt="timer" />
        <h4>45.75 %</h4>
@@ -18,7 +18,7 @@ const Wedgits = () => {
       </div>
       
      </div>
-     <div className='col-12  col-xl-6'>
+     <div className='col-12  col-xl-6 '>
       <div className='counter my-4'>
        <img src={counter} alt='counter' />
        <h4>Storage usage</h4>
@@ -34,8 +34,8 @@ const Wedgits = () => {
     </div>
 
    </div>
-   <div className='col-12 col-xl-6'>
-    <div className='right-wedgets mx-4 my-4'>
+   <div className='col-12 col-xl-6 p-0'>
+    <div className='right-wedgets mx-md-4 my-4'>
      <h4 className='my-3'>Server Status Overtime</h4>
      <BarChart />
 

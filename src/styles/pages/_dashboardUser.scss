@@ -95,7 +95,18 @@ percentage-4 : (
      padding: 0.7rem 0;
     }
    }
+   //start responsive phone
+   @include for-phone-only {
+    .item-right-wedgets{
+      padding: 1.5rem 1rem;
+      p{
+        font-size: 14px
+      }
+    }
 
+   }
+    //end responsive phone
+   
   }
  }
 //sec 2 => page dashboard "Traffic overview"
@@ -115,6 +126,7 @@ percentage-4 : (
     border-radius:$border-radius-sm ;
     h3 , p{
       margin: 1rem;
+      
     }
     span{
       font-size: 1rem;
@@ -151,4 +163,17 @@ percentage-4 : (
   }
 
 }
+   //start responsive phone
+   @include for-phone-only {
+    .daily ,.hourly{
+      margin: 20px 0px;
+    }
+    .charts .item-about{
+      width: 100%;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+   }
+    //end responsive phone
 }

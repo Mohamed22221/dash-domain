@@ -5,16 +5,16 @@ import InputSelect from '../../glopal/InputSelect'
 const FormPlaneInfo = ({setToggleInfo}) => {
   return (
    <form>
-   <div className='d-flex justify-content-evenly' >
+   <div className='d-flex flex-wrap justify-content-md-evenly' >
    <InputField title="IP address" type="text" placeholder="82.180.132.85" />
    <InputSelect title="Status" select1="Running" select2="Root"/>
 
    </div>
-   <div className='d-flex justify-content-evenly' >
+   <div className='d-flex flex-wrap justify-content-md-evenly' >
    <InputField title="VPS uptime" type="text" placeholder="33 days 12 hours" />
    <InputField title="Current os" type="text" placeholder="CentOS 7 64bit" />
    </div>
-   <div className='d-flex justify-content-evenly' >
+   <div className='d-flex flex-wrap justify-content-md-evenly' >
    <InputField title="Location" type="text" placeholder="enter location" />
    <InputField title="Node" type="text" placeholder="First name" />
    </div>

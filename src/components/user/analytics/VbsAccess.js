@@ -8,27 +8,27 @@ const VbsAccess = () => {
    <div className='vbs-access'>
     { toggleAccess ?
     <div> 
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>SSH IP</p>
     <h5>82.180.132.85</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>SSH username</p>
     <h5 className='root'>Root</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>SSH password</p>
     <a>Change</a>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Default SSH port</p>
     <h5>22</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>IPV6</p>
     <h5>2a02:4780:10:1f02::1</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Termminal</p>
     <h5>ssh root@82.180.132.85</h5>
    </div>

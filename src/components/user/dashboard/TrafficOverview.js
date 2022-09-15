@@ -4,7 +4,7 @@ import BarChart from './barChart'
 
 const TrafficOverview = () => {
  return (
-  <div className='traffic-overview mx-3 space-section'>
+  <div className='traffic-overview my-3 m-md-3 space-section'>
    <div className='header-overview'>
     <h4>Traffic overview</h4>
     <div>
@@ -17,7 +17,7 @@ const TrafficOverview = () => {
     </div>
 
    </div>
-   <div className='about-traffic row align-items-center gx-4'>
+   <div className='about-traffic row align-items-center gx-md-4'>
     <div className='col-12 col-lg-6 col-xl-5'>
      <div className='item-about daily'>
       <h3>13.87<span>/10GB</span></h3>
@@ -31,7 +31,7 @@ const TrafficOverview = () => {
      </div>
 
     </div>
-    <div className='col-12 col-lg-6 col-xl-7'>
+    <div className='col-12 col-lg-6 col-xl-7 charts'>
      <div className='item-about chart'>
     <AbexPar />
      </div>

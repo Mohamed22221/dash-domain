@@ -142,6 +142,12 @@ p, a, button {
   font-size: 1.7rem;
 }
 
+@media (max-width: 599px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
 .black {
   color: black;
 }
@@ -201,6 +207,18 @@ p, a, button {
   color: #0AB28B;
   padding: 8px;
 }
+@media (max-width: 599px) {
+  .item-bg {
+    margin: 1.5rem 0;
+    padding: 20px 15px;
+  }
+  .item-bg p {
+    font-size: 1.5rem;
+  }
+  .item-bg h5 {
+    font-size: 1.5rem;
+  }
+}
 
 .btn {
   padding: 10px 35px;
@@ -234,6 +252,12 @@ p, a, button {
   border: 1px solid #ffffff !important;
   color: #ffffff !important;
 }
+@media (max-width: 599px) {
+  .btn {
+    padding: 10px 15px;
+    margin: 8px;
+  }
+}
 
 .three-buttons {
   background-color: #F5F6FA;
@@ -243,10 +267,27 @@ p, a, button {
 .three-buttons button {
   margin: 4px;
 }
+@media (max-width: 599px) {
+  .three-buttons {
+    margin: 10px 0 0 0;
+    padding: 5px 2px;
+    width: 100%;
+  }
+  .three-buttons button {
+    font-size: 14px;
+    padding: 8px 8px;
+    margin: 2px;
+  }
+}
 
 .input {
   padding: 15px 20px;
   border-radius: 1rem;
+}
+@media (max-width: 599px) {
+  .input {
+    padding: 10px 10px;
+  }
 }
 .input__box {
   display: flex;
@@ -254,11 +295,22 @@ p, a, button {
   margin: 30px;
   width: 380px;
 }
+@media (max-width: 599px) {
+  .input__box {
+    width: 100%;
+    margin: 10px;
+  }
+}
 .input__label {
   color: #2A2E33;
   font-size: 1.8rem;
   margin: 10px 0;
   font-weight: 600;
+}
+@media (max-width: 599px) {
+  .input__label {
+    font-size: 1.6rem;
+  }
 }
 .input__field {
   border: 1px solid #A6A6A6;
@@ -348,7 +400,8 @@ p, a, button {
 }
 @media (max-width: 768px) {
   .sub-container {
-    margin-inline: 15px 15px;
+    margin-inline: 15px 10px;
+    margin-block: 110px 20px;
   }
 }
 
@@ -603,7 +656,7 @@ p, a, button {
   top: -9rem;
 }
 .topbar .show {
-  top: 8rem;
+  top: 7.5rem;
 }
 .topbar .search-icon {
   display: none;
@@ -687,6 +740,14 @@ p, a, button {
 .wedgits .right-wedgets .item-right-wedgets h5, .wedgits .right-wedgets .item-right-wedgets p {
   padding: 0.7rem 0;
 }
+@media (max-width: 599px) {
+  .wedgits .right-wedgets .item-right-wedgets {
+    padding: 1.5rem 1rem;
+  }
+  .wedgits .right-wedgets .item-right-wedgets p {
+    font-size: 14px;
+  }
+}
 
 .traffic-overview .header-overview {
   flex-wrap: wrap;
@@ -736,6 +797,16 @@ p, a, button {
 .traffic-overview .mixed-chart .apx-legend-position-bottom {
   display: none;
 }
+@media (max-width: 599px) {
+  .traffic-overview .daily, .traffic-overview .hourly {
+    margin: 20px 0px;
+  }
+  .traffic-overview .charts .item-about {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
 
 .wedgets-analytics .left-wedgets .timer {
   flex-direction: column;
@@ -766,9 +837,22 @@ p, a, button {
   height: 300px !important;
   width: 100%;
 }
+@media (max-width: 599px) {
+  .wedgets-analytics .right-wedgets {
+    height: calc(100% - 10px);
+  }
+  .wedgets-analytics .right-wedgets canvas {
+    height: 90% !important;
+    width: 100%;
+  }
+}
 
 .main-vps-serveses {
   margin: 0 2.2rem;
+}
+.main-vps-serveses .head-vps {
+  flex-wrap: wrap;
+  width: 100%;
 }
 .main-vps-serveses .body-vbs .item-vbs {
   background-color: #F5F6FA;
@@ -783,10 +867,32 @@ p, a, button {
 .main-vps-serveses .body-vbs .item-vbs h5 {
   font-weight: 500;
 }
+@media (max-width: 599px) {
+  .main-vps-serveses {
+    margin: 0rem;
+  }
+  .main-vps-serveses .head-vps {
+    justify-content: center;
+  }
+}
 
 .dns-Tabel .flow {
   width: 100%;
-  overflow-x: auto;
+}
+@media (max-width: 1200px) {
+  .dns-Tabel .flow {
+    overflow-x: scroll;
+  }
+}
+.dns-Tabel .head-dns {
+  flex-wrap: wrap;
+}
+@media (max-width: 599px) {
+  .dns-Tabel .head-dns .three-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .dns-Tabel .body-dns {
   margin: 4rem 1.6rem;
@@ -815,4 +921,12 @@ p, a, button {
 }
 .dns-Tabel .body-dns .primary svg {
   font-size: 28px;
+}
+@media (max-width: 1200px) {
+  .dns-Tabel .body-dns {
+    margin: 3rem 0rem;
+  }
+  .dns-Tabel .body-dns .title, .dns-Tabel .body-dns .primary {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -8,27 +8,27 @@ const VpsInfo = () => {
    <div className='vbs-info'>
     { toggleInfo ?
     <div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>IP Address</p>
     <h5>82.180.132.85</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Status</p>
     <h5 className='root'>Running</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>VPS uptime</p>
     <h5>33 days 12 hours</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Current OS</p>
     <h5>CentOS 7 64bit</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Location</p>
     <h5>Egypt</h5>
    </div>
-   <div className='item-vbs'>
+   <div className='item-bg'>
     <p>Node</p>
     <h5>Egypt</h5>
    </div>

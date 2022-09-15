@@ -7,20 +7,31 @@
 .dns-Tabel {
  .flow {
   width: 100%;
-  overflow-x: auto;
+  @include for-desktop-up{
+   overflow-x: scroll
+  }
  }
 
  .head-dns {
-  @extend %FlexRowBetween
+  @extend %FlexRowBetween;
+  flex-wrap: wrap;
+  @include for-phone-only{
+   .three-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+  }
+
  }
 
  .body-dns {
   margin: 4rem 1.6rem;
 
+
   .table>:not(caption)>*>* {
    padding: 1.8rem 1.5rem;
    border-bottom-width: 0rem;
-
 
    
   }
@@ -52,7 +63,12 @@
 
 
 
-
+  @include for-desktop-up{
+   margin: 3rem 0rem ;
+   .title ,.primary{
+    font-size: 1.3rem;
+   }
+  }
  }
 
 }

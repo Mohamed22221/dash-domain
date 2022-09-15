@@ -9,27 +9,27 @@ const PlanDetails = () => {
       { togglePlan ?
       <div>
         
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>Current plan</p>
       <h5>VPS 4</h5>
      </div>
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>Expiration date</p>
       <h5>2023-07-28</h5>
      </div>
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>CPU cores</p>
       <h5>4</h5>
      </div>
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>Memory</p>
       <h5>4 GB</h5>
      </div>
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>Bandwidth</p>
       <h5>4 TP</h5>
      </div>
-     <div className='item-vbs'>
+     <div className='item-bg'>
       <p>Disk space</p>
       <h5>80GB</h5>
      </div>
