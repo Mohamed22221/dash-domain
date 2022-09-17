@@ -17,8 +17,8 @@ const SignWrapper = (props) => {
   slidesToScroll: 1
 };
   return (
-    <div className='row  align-items-center sign-wrapper '>
-      <div className='col-md-6 ' >
+    <div className='row ml-0  align-items-md-center sign-wrapper '>
+      <div className=' col-md-6 main-left' >
         <div className='left-sign-wrapper '>
           <div className='header'>
             <img src={logo} />
@@ -39,7 +39,7 @@ const SignWrapper = (props) => {
         </Slider>
         </div>
         </div>
-     <div className='right-sign-wrapper d-flex flex-column align-items-center col-6 p-0'>
+     <div className='right-sign-wrapper d-flex flex-column align-items-center  col-md-6 p-0'>
       {props.children}
      </div>
     </div>
