@@ -14,6 +14,8 @@ import AccountMenu from '../components/glopal/Menu';
 
 const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
   const [toggleSearch, setToggleSearch] = useState(true)
+  const namePerson = JSON.parse(localStorage.getItem("user-info")).email.slice(0,4)
+  console.log(namePerson)
   return (
     <nav className='topbar '>
       <div className={showSide ? 'main-topbar container-inline ' : "main-topbar container-inline-sm"}>
@@ -50,7 +52,7 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
             <div className='account'>
               <img src={account} alt="my-account" />
               <div>
-                <h6>ahmed</h6>
+                <h6>{namePerson}</h6>
                 <p>admin</p>
               </div>
               <div className='more'>

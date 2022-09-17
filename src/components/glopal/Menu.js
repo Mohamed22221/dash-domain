@@ -14,11 +14,13 @@ import Logout from '@mui/icons-material/Logout';
 import more from "../../assets/images/icons/more.svg"
 import { BsPerson } from 'react-icons/bs';
 import { BiLogOut } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export default function AccountMenu() {
  const [anchorEl, setAnchorEl] = React.useState(null);
+ const navigate = useNavigate()
  const open = Boolean(anchorEl);
  const handleClick = (event) => {
   setAnchorEl(event.currentTarget);
@@ -26,6 +28,10 @@ export default function AccountMenu() {
  const handleClose = () => {
   setAnchorEl(null);
  };
+ const HandelLogout = () =>{
+  localStorage.removeItem("user-info")
+  navigate("/login")
+ }
  return (
   <React.Fragment>
    <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
@@ -88,7 +94,7 @@ export default function AccountMenu() {
      />
      <a style={{ margin: "12px", color: "#A6A6A6" }}>Profile</a>
     </MenuItem>
-    <MenuItem>
+    <MenuItem onClick={HandelLogout}>
      <BiLogOut
       style={{
        fontSize: "28px",
@@ -96,7 +102,7 @@ export default function AccountMenu() {
 
       }}
      />
-     <a style={{ margin: "12px", color: "#A6A6A6" }}>Log out</a>
+     <a style={{ margin: "12px", color: "#A6A6A6" }} >Log out</a>
 
     </MenuItem>
 
