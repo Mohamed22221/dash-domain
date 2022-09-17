@@ -1,18 +1,22 @@
 import axios from 'axios';
 import React, {useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import InputField from '../../glopal/InputField';
+import SignWrapper from '../../glopal/SignWrapper';
 const Login = () => {
+
  const [email , setEmail] = useState("paul.hoang@vmodev.com")
  const [pass , setPassword] = useState("abcd1234")
- const location = useLocation();
  const navigate = useNavigate();
+
  useEffect(() => {
   if (localStorage.getItem("user-info")) {
    navigate("/dashboard")
   }
-  
+
  }, [])
  
+ // start handel api login
  const handelLogin= (e) =>{
   e.preventDefault()
   
@@ -32,7 +36,6 @@ const Login = () => {
   .then(function (response) {
     console.log(JSON.stringify(config.data.email));
     localStorage.setItem("user-info",JSON.stringify(config.data))
-    location.pathname.includes('dashboard')
     navigate("/dashboard")
    
   })
@@ -43,14 +46,22 @@ const Login = () => {
  }  
 
  return (
-  <div className='sub-container '>
+  <SignWrapper>
+  <div className='login-bage '>
+    <div className='header-login'>
+      <h3>LOG IN</h3>
+      <h5>Login Into Your Account</h5>
+    </div>
    <form >
-    <input type="email" value={email} placeholder='ادخل بريدك الالكتروني' onChange={(e) => setEmail(e.target.value)} />
-    <input type="password" value={pass} placeholder='ادخل كلمة السر' onChange={(e) => setPassword(e.target.value)} />
-    <Link to="/analytics">analytics</Link>
-    <button onClick={handelLogin} className='btn btn-dark btn-lg '>تسجيل الدخول</button>
+    <InputField title="Email" type="email" placeholder="Email" value={email} change={(e) =>setEmail(e.target.value)} />
+    <InputField title="Password" type="password" placeholder="Password" value={pass} change={(e) =>setPassword(e.target.value)} />
+    <a className='d-flex justify-content-end my-4'>forgot password ?</a>
+    <button onClick={handelLogin} className='btn btn__primary  '>log in</button>
+    <p className='d-flex justify-content-center my-3'>Not have an account ?  <a> Sign up</a> </p>
    </form>
   </div>
+  </SignWrapper>
+
  )
 }
 

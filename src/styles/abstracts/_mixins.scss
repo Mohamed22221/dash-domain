@@ -11,8 +11,11 @@
 @mixin for-desktop-up {
   @media (max-width: 1200px) { @content; }
 }
+@mixin for-laptop-up {
+  @media (max-width: 1400px) { @content; }
+}
 @mixin for-big-desktop-up {
-  @media (min-width: 1400px) { @content; }
+  @media (max-width: 1500px) { @content; }
 }
 
 

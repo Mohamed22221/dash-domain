@@ -74,6 +74,7 @@ body {
   font-weight: 500;
   background-color: #F5F6FA;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 ul, menu, ol {
@@ -680,7 +681,7 @@ p, a, button {
   }
 }
 
-.domain-overview,
+.contact-information, .domain-overview,
 .dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
@@ -938,5 +939,156 @@ p, a, button {
   }
   .dns-Tabel .body-dns .title, .dns-Tabel .body-dns .primary {
     font-size: 1.3rem;
+  }
+}
+
+.login-bage .sidebar {
+  display: none;
+}
+
+.contact-information .header button {
+  margin: 15px 0px;
+}
+
+.about-account {
+  border-radius: 20px;
+  background-color: white;
+  margin: 30px 0;
+}
+.about-account .head-about {
+  background: rgba(251, 163, 13, 0.25);
+  border: 3px solid #FFFFFF;
+  border-radius: 20px 20px 3px 0px;
+  padding: 20px;
+}
+.about-account .head-about h4 {
+  color: #FBA30D;
+}
+.about-account .body-about {
+  padding: 20px;
+}
+.about-account .body-about h5 {
+  padding: 7px 0;
+}
+.about-account .body-about p {
+  padding: 7px 0;
+  color: #A6A6A6;
+}
+@media (max-width: 599px) {
+  .about-account .body-about h5 {
+    font-size: 1.5rem;
+  }
+  .about-account .body-about p {
+    font-size: 1.3rem;
+  }
+}
+
+.sign-wrapper {
+  background-color: white;
+  position: relative;
+}
+.sign-wrapper .left-sign-wrapper {
+  background-color: #2A2E33;
+  overflow: hidden;
+  height: 100vh;
+}
+.sign-wrapper .left-sign-wrapper img {
+  padding: 20px;
+}
+.sign-wrapper .left-sign-wrapper h1 {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 80px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 50px 140px 20px 70px;
+  color: white;
+}
+.sign-wrapper .left-sign-wrapper .slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.sign-wrapper .left-sign-wrapper .slick-dots .slick-active button::before {
+  color: #FBA30D;
+  font-size: 15px;
+}
+.sign-wrapper .left-sign-wrapper .slick-dots li button::before {
+  color: #FAE5C0;
+  font-size: 12px;
+  border-radius: 20px;
+}
+@media (max-width: 1400px) {
+  .sign-wrapper .left-sign-wrapper h1 {
+    padding: 30px;
+    font-size: 4.5rem;
+    line-height: 45px;
+  }
+  .sign-wrapper .left-sign-wrapper .slick-slide img {
+    width: 350px;
+  }
+}
+@media (max-width: 1500px) {
+  .sign-wrapper .left-sign-wrapper h1 {
+    padding: 35px;
+    font-size: 4.9rem;
+    line-height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .sign-wrapper .left-sign-wrapper {
+    display: none;
+  }
+}
+.sign-wrapper .right-sign-wrapper .login-bage .header-login {
+  text-align: center;
+  padding: 40px 0;
+}
+.sign-wrapper .right-sign-wrapper .login-bage .header-login h3, .sign-wrapper .right-sign-wrapper .login-bage .header-login h5 {
+  padding: 15px 0;
+}
+.sign-wrapper .right-sign-wrapper .login-bage .header-login h5 {
+  color: #A6A6A6;
+}
+.sign-wrapper .right-sign-wrapper .login-bage .input__box {
+  margin: 15px 0;
+  padding: 0;
+  width: 400px;
+}
+.sign-wrapper .right-sign-wrapper .login-bage .input__field {
+  padding: 10px;
+  border: 2px solid;
+}
+.sign-wrapper .right-sign-wrapper .login-bage .input__field:focus {
+  border: 2px solid #FBA30D;
+}
+.sign-wrapper .right-sign-wrapper .login-bage button {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+.sign-wrapper .right-sign-wrapper .login-bage a {
+  text-decoration: underline;
+}
+.sign-wrapper .right-sign-wrapper .login-bage a:hover {
+  color: #FBA30D;
+}
+.sign-wrapper .right-sign-wrapper .login-bage p a {
+  margin: 0 5px;
+  color: #FBA30D;
+}
+@media (max-width: 768px) {
+  .sign-wrapper .right-sign-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  .sign-wrapper .right-sign-wrapper .login-bage .input__field {
+    width: 100%;
+  }
+  .sign-wrapper .right-sign-wrapper .login-bage .input__box {
+    width: 100%;
+  }
+  .sign-wrapper .right-sign-wrapper .login-bage h3, .sign-wrapper .right-sign-wrapper .login-bage h5 {
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -5,13 +5,12 @@ import DomainOverview from '../../components/user/domain/DomainOverview'
 import SideBar from '../../layouts/SideBar'
 import Topbar from '../../layouts/Topbar'
 
-const Domain = ({showSide ,setShowSide ,showSideSm ,setShowSideSm}) => {
+const Domain = ({showSide}) => {
 
 
   return (
     <div className={showSide ? "sub-container" : "sub-container-sm"}>
-      <SideBar showSide={showSide} setShowSide={setShowSide} showSideSm={showSideSm} setShowSideSm={setShowSideSm} />
-      <Topbar showSide={showSide} showSideSm={showSideSm} setShowSideSm={setShowSideSm} />
+
       <TextHeader title="Domain" />
       <DomainOverview />
       <DnsTabel />

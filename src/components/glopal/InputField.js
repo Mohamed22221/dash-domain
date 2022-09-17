@@ -1,9 +1,7 @@
 import React from "react";
 
-const InputField = ({ value, setValue, title, type, placeholder }) => {
-  const handleInput = (e) => {
-    setValue(e.target.value);
-  };
+const InputField = ({ value, setValue,change , title, type, placeholder }) => {
+
   return (
     <div className="input__box">
       <label className="input__label" htmlFor="email">{title}</label>
@@ -11,7 +9,7 @@ const InputField = ({ value, setValue, title, type, placeholder }) => {
         type={type ? `${type}` : "text"}
         className="input input__field"
         value={value}
-        onChange={handleInput}
+        onChange={change}
         placeholder={placeholder ? placeholder : ""}
         required
       />
