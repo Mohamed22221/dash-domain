@@ -1,8 +1,12 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const DomainOverview = () => {
+  const initial = { x: 0, y: -12, opacity: 0 }
+  const animate = { x: 0, y: 0, opacity: 1 }
+  const transition = { duration: 0.5 }
   return (
-    <div className='domain-overview space-section'>
+    <motion.div initial={initial} animate={animate} transition={transition} className='domain-overview space-section'>
      <h4 className='py-4'>Domain overview</h4>
        <div className='item-bg'>
       <p>Domain name</p>
@@ -28,7 +32,7 @@ const DomainOverview = () => {
       <p>Secret key</p>
       <h5>*********</h5>
      </div>
-     </div>
+     </motion.div >
   )
 }
 

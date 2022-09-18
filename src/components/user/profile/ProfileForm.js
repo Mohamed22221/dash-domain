@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import profile from "../../../assets/images/main/profile.png"
 import InputField from '../../glopal/InputField'
+import { motion } from "framer-motion"
+
 const ProfileForm = () => {
   const [changePass , setChangePass] = useState(true)
+  const initial = { x: 0, y: -12, opacity: 0 }
+  const animate = { x: 0, y: 0, opacity: 1 }
+  const transition = { duration: 0.5 }
   return (
-    <div className='main-profile space-section'>
+    <motion.div initial={initial} animate={animate} transition={transition} className='main-profile space-section'>
       <form>
         <div className='upload-form d-flex flex-column align-items-center'>
           <img src={profile} />
@@ -53,7 +58,7 @@ const ProfileForm = () => {
       </form>
 
 
-    </div>
+    </motion.div >
   )
 }
 

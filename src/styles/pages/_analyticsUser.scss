@@ -1,12 +1,25 @@
 .wedgets-analytics {
-
+.apexcharts-theme-light{
+  width: 200px !important;
+}
   //left wegdets 
   .left-wedgets {
 
     .counter,
     .timer {
-      @extend %FlexRowCenter;
       @extend %default-item;
+    }
+    .timer{
+      @extend %FlexRowCenter ;
+    }
+    .counter{
+      @extend %FlexRowBetween ;
+      .redial-bar{
+        width: 40%;
+      }
+      h4{
+        font-size: 1.8rem;
+      }
     }
 
     //left wegdets analytics timer
@@ -21,6 +34,7 @@
       h4,
       p {
         padding-block: 1rem;
+        text-align: center;
 
       }
 
@@ -40,6 +54,29 @@
       img {
         padding: 2rem;
       }
+    }
+    @include for-big-desktop-up{
+      .counter{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        .redial-bar{
+          width: 100%;
+        }
+        h4{
+          padding-bottom: 8px;
+        }
+      }
+      .timer p{
+        font-size: 1.5rem;
+
+      }
+      
+      img{
+        width: 100%
+      }
+
     }
   }
 
@@ -63,6 +100,12 @@
     }
 
     //end responsive phone wedgets-analytics
+    @include for-big-desktop-up{
+      canvas {
+        height: 80% !important;
+        width: 100% !important;
+      }
+    }
   }
 
 }

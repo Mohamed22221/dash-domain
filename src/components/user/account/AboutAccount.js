@@ -1,9 +1,13 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const AboutAccount = () => {
+  const initial = { x: 0, y: -12, opacity: 0 }
+  const animate = { x: 0, y: 0, opacity: 1 }
+  const transition = { duration: 0.5 }
   return (
    <>
-    <div className='about-account '>
+    <motion.div initial={initial} animate={animate} transition={transition} className='about-account '>
      <div className='head-about'>
       <h4>Domain</h4>
      </div>
@@ -17,8 +21,8 @@ const AboutAccount = () => {
 
       </div>
      </div>
-    </div>
-    <div className='about-account '>
+    </motion.div>
+    <motion.div initial={initial} animate={animate} transition={transition} className='about-account '>
      <div className='head-about'>
       <h4>Vps</h4>
      </div>
@@ -32,7 +36,7 @@ const AboutAccount = () => {
 
       </div>
      </div>
-    </div>
+    </motion.div >
     </>
   )
 }

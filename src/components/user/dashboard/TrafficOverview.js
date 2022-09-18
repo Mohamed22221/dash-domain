@@ -1,10 +1,14 @@
 import React from 'react'
 import AbexPar from '../analytics/AbexPar'
 import BarChart from './barChart'
+import { motion } from "framer-motion"
 
 const TrafficOverview = () => {
+ const initial = { x: 0, y: -12 , opacity: 0  } 
+ const animate = { x: 0, y: 0 ,opacity: 1  }
+ const transition = { duration: 0.5  }
  return (
-  <div className='traffic-overview my-3 m-md-3 space-section'>
+  <motion.div initial={initial} animate={animate} transition={transition} className='traffic-overview my-3 m-md-3 space-section'>
    <div className='header-overview'>
     <h4>Traffic overview</h4>
     <div>
@@ -38,7 +42,7 @@ const TrafficOverview = () => {
     </div>
 
    </div>
-  </div>
+  </motion.div>
  )
 }
 

@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import ChangeContact from './ChangeContact'
+import { motion } from "framer-motion"
 
 const ContactInformation = () => {
  const [toggleChange, setToggleChange] = useState(true)
+ const initial = { x: 0, y: -12, opacity: 0 }
+ const animate = { x: 0, y: 0, opacity: 1 }
+ const transition = { duration: 0.5 }
  return (
   <div>
    <div className='contact-information space-section'>
     {toggleChange ?
-     <div>
+     <motion.div initial={initial} animate={animate} transition={transition}>
       <div className='header d-flex justify-content-between align-items-center'>
        <h5 className='py-4'>Contact information</h5>
        <button className="btn btn__primary" onClick={() => setToggleChange(false)}>Change</button>
@@ -37,7 +41,7 @@ const ContactInformation = () => {
        <p>Mobile</p>
        <h5>41452634</h5>
       </div>
-     </div>
+     </motion.div >
      : <ChangeContact setToggleChange={setToggleChange} />
     }
 

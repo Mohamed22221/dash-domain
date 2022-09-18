@@ -18,7 +18,6 @@
   align-items: center;
 }
 
-.wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer {
   -webkit-display: flex;
   -moz-display: flex;
@@ -35,7 +34,7 @@
   align-items: center;
 }
 
-.dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .item-bg {
+.dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p, .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -730,6 +729,14 @@ p, a, button {
   color: #E24A34;
   background: rgba(226, 74, 52, 0.25);
 }
+@media (max-width: 1400px) {
+  .wedgits .left-wedgets .img {
+    width: 90px;
+  }
+  .wedgits .left-wedgets .img img {
+    width: 100%;
+  }
+}
 .wedgits .right-wedgets {
   height: 93%;
 }
@@ -819,6 +826,15 @@ p, a, button {
   }
 }
 
+.wedgets-analytics .apexcharts-theme-light {
+  width: 200px !important;
+}
+.wedgets-analytics .left-wedgets .counter .redial-bar {
+  width: 40%;
+}
+.wedgets-analytics .left-wedgets .counter h4 {
+  font-size: 1.8rem;
+}
 .wedgets-analytics .left-wedgets .timer {
   flex-direction: column;
 }
@@ -828,6 +844,7 @@ p, a, button {
 .wedgets-analytics .left-wedgets .timer h4,
 .wedgets-analytics .left-wedgets .timer p {
   padding-block: 1rem;
+  text-align: center;
 }
 .wedgets-analytics .left-wedgets .timer p {
   font-size: 2.1rem;
@@ -840,6 +857,26 @@ p, a, button {
 }
 .wedgets-analytics .left-wedgets .counter img {
   padding: 2rem;
+}
+@media (max-width: 1500px) {
+  .wedgets-analytics .left-wedgets .counter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .wedgets-analytics .left-wedgets .counter .redial-bar {
+    width: 100%;
+  }
+  .wedgets-analytics .left-wedgets .counter h4 {
+    padding-bottom: 8px;
+  }
+  .wedgets-analytics .left-wedgets .timer p {
+    font-size: 1.5rem;
+  }
+  .wedgets-analytics .left-wedgets img {
+    width: 100%;
+  }
 }
 .wedgets-analytics .right-wedgets {
   height: calc(100% - 35px);
@@ -855,6 +892,12 @@ p, a, button {
   .wedgets-analytics .right-wedgets canvas {
     height: 90% !important;
     width: 100%;
+  }
+}
+@media (max-width: 1500px) {
+  .wedgets-analytics .right-wedgets canvas {
+    height: 80% !important;
+    width: 100% !important;
   }
 }
 
@@ -1109,6 +1152,10 @@ p, a, button {
   .sign-wrapper .right-sign-wrapper {
     width: 100%;
     margin: 0;
+    padding: 0 20px;
+  }
+  .sign-wrapper .right-sign-wrapper .login-bage {
+    padding: 10px;
   }
   .sign-wrapper .right-sign-wrapper .login-bage .input__field {
     width: 100%;

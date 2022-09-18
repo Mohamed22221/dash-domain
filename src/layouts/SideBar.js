@@ -39,11 +39,11 @@ const SideBar = ({ showSide, setShowSide, showSideSm ,setShowSideSm }) => {
             <p >Domain</p>
           </NavLink>
           <NavLink to="/account" className='route ' onClick={() => setShowSideSm(true)}>
-            <MdDomainVerification />
+            <MdPersonAddAlt />
             <p >My account</p>
           </NavLink>
           <NavLink to="/support" className='route ' onClick={() => setShowSideSm(true)}>
-            <MdDomainVerification />
+            <HiOutlineChat />
             <p >Supportt</p>
           </NavLink>
 

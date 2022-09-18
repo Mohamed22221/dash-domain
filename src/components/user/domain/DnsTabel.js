@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import ToggleThreeBottons from '../../glopal/ToggleThreeBottons'
 import DnsRecord from './DnsRecord'
+import { motion } from "framer-motion"
 
 const DnsTabel = () => {
  const [active, setActive] = useState("Dns record")
-
+ const initial = { x: 0, y: -12, opacity: 0 }
+ const animate = { x: 0, y: 0, opacity: 1 }
+ const transition = { duration: 0.5 }
  return (
-  <div className='dns-Tabel'>
+  <motion.div initial={initial} animate={animate} transition={transition} className='dns-Tabel'>
    <div className='head-dns'>
     <h4 className='py-4'>DNS</h4>
     <ToggleThreeBottons
@@ -24,7 +27,7 @@ const DnsTabel = () => {
     :<DnsRecord /> 
     }
    </div>
-  </div>
+  </motion.div >
  )
 }
 
