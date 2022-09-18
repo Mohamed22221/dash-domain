@@ -41,3 +41,33 @@
  }
 }
 }
+
+//my profile user
+.main-profile{
+  @extend %default-item;
+  .upload-form{
+    margin-bottom: 20px;
+    h5{
+      color: $primary-light-color;
+    }
+
+  }
+  .change-pass{
+    position: relative;
+    button{
+      position: absolute;
+      top: 42px;
+      right: 0;
+      color: $primary-light-color;
+    }
+  }
+  .hide-change{
+    display: none;
+  }
+  .show-change{
+    display: block;
+  }
+  .save-change{
+    width: 250px;
+  }
+}

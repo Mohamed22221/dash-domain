@@ -4,6 +4,7 @@ import { BsSearch } from 'react-icons/bs';
 import { FiSearch } from 'react-icons/fi';
 import { MdOutlineClose } from 'react-icons/md';
 import { RiMenu2Fill } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 //images
 import notification from "../assets/images/icons/notification.svg"
 import account from "../assets/images/main/account.png"
@@ -50,11 +51,13 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
               <img src={notification} alt="notification" />
             </div>
             <div className='account'>
-              <img src={account} alt="my-account" />
+            <Link to="profile"> <img src={account} alt="my-account" /></Link>
+              
               <div>
                 <h6>{namePerson}</h6>
                 <p>admin</p>
               </div>
+              
               <div className='more'>
                 <AccountMenu />
               </div>

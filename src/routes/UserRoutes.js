@@ -4,11 +4,12 @@ import Login from '../components/user/auth/Login'
 import Analytics from '../pages/user/Analytics'
 import DashboardUser from '../pages/user/DashboardUser'
 import Domain from '../pages/user/Domain'
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useState } from "react";
+
 import Account from '../pages/user/Account'
 import SideBar from '../layouts/SideBar'
 import BarsLayout from '../layouts/BarsLayout'
+import Profile from '../pages/user/Profile'
 
 const UserRoutes = () => {
 
@@ -29,6 +30,8 @@ const UserRoutes = () => {
         <Route path='/analytics' element={<Analytics showSide={showSide}/>} />
         <Route path='/domain' element={<Domain showSide={showSide}/>} />
         <Route path='/account' element={<Account showSide={showSide}/>} />
+        <Route path='/profile' element={<Profile showSide={showSide}/>} />
+
         
         </Route>
         <Route path='/' element={<Login />} />

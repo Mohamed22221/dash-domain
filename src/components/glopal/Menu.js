@@ -14,7 +14,7 @@ import Logout from '@mui/icons-material/Logout';
 import more from "../../assets/images/icons/more.svg"
 import { BsPerson } from 'react-icons/bs';
 import { BiLogOut } from 'react-icons/bi';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -84,6 +84,7 @@ export default function AccountMenu() {
     transformOrigin={{ horizontal: 'right', vertical: 'top' }}
     anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
    >
+    <Link to="profile">
     <MenuItem>
      <BsPerson
       style={{
@@ -94,6 +95,7 @@ export default function AccountMenu() {
      />
      <a style={{ margin: "12px", color: "#A6A6A6" }}>Profile</a>
     </MenuItem>
+    </Link>
     <MenuItem onClick={HandelLogout}>
      <BiLogOut
       style={{

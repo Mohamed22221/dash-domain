@@ -681,7 +681,7 @@ p, a, button {
   }
 }
 
-.contact-information, .domain-overview,
+.main-profile, .contact-information, .domain-overview,
 .dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
@@ -981,6 +981,31 @@ p, a, button {
   .about-account .body-about p {
     font-size: 1.3rem;
   }
+}
+
+.main-profile .upload-form {
+  margin-bottom: 20px;
+}
+.main-profile .upload-form h5 {
+  color: #FBA30D;
+}
+.main-profile .change-pass {
+  position: relative;
+}
+.main-profile .change-pass button {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  color: #FBA30D;
+}
+.main-profile .hide-change {
+  display: none;
+}
+.main-profile .show-change {
+  display: block;
+}
+.main-profile .save-change {
+  width: 250px;
 }
 
 .sign-wrapper {
