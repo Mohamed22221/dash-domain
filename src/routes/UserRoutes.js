@@ -15,6 +15,8 @@ const UserRoutes = () => {
 
   const [showSide, setShowSide] = useState(true)
   const [showSideSm, setShowSideSm] = useState(true)
+  const [showBlurSide, setShowBlurSide] = useState(true)
+
 
   return (
     <div>
@@ -24,6 +26,8 @@ const UserRoutes = () => {
         setShowSide={setShowSide}
         showSideSm={showSideSm}
         setShowSideSm={setShowSideSm}
+        showBlurSide={showBlurSide}
+        setShowBlurSide={setShowBlurSide}
         /> }>
 
         <Route path='/dashboard' element={<DashboardUser showSide={showSide}/>} />

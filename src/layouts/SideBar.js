@@ -10,9 +10,11 @@ import { HiOutlineChat } from 'react-icons/hi';
 import logo from "../assets/images/logos/logo.png"
 
 
-const SideBar = ({ showSide, setShowSide, showSideSm ,setShowSideSm }) => {
+const SideBar = ({ showSide, setShowSide, showSideSm, setShowSideSm }) => {
   return (
+    
     <nav
+    
       className={
         showSide && showSideSm ? "sidebar hide"
           : showSideSm === false ? "sidebar show" : "sidebar sidehide "
@@ -25,10 +27,10 @@ const SideBar = ({ showSide, setShowSide, showSideSm ,setShowSideSm }) => {
         </div>
         <div className='links'>
           <div  >
-          <NavLink to="/dashboard" className='route' onClick={() => setShowSideSm(true)} >
-            <FiGrid />
-            <p>Dashboard</p>
-          </NavLink>
+            <NavLink  to="/dashboard" className='route' onClick={() => setShowSideSm(true)} >
+              <FiGrid />
+              <p>Dashboard</p>
+            </NavLink>
           </div>
           <NavLink to="/analytics" className='route ' onClick={() => setShowSideSm(true)}>
             <TbDeviceAnalytics />

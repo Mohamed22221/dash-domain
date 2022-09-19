@@ -11,11 +11,15 @@
 //folder components
 @import "./components/buttons";
 @import "./components/inputs";
+@import "./components/notification";
 
 //folder layouts
 @import "./layouts/container";
 @import "./layouts/sidebar";
 @import "./layouts/topbar";
+@import "./layouts/blursidebar";
+
+
 
 //folder pages
 @import "./pages/dashboardUser";

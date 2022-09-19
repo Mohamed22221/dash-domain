@@ -53,7 +53,7 @@ const ProfileForm = () => {
 
         </div>
         <div className='d-flex justify-content-center '>
-        <button className='btn btn btn__primary save-change  '  >Save</button>
+        <button className='save-change btn btn btn__primary '>Save</button>
         </div>
       </form>
 

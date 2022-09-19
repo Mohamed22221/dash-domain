@@ -13,7 +13,7 @@ import AccountMenu from '../components/glopal/Menu';
 
 
 
-const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
+const Topbar = ({ showSide, showSideSm, setShowSideSm ,setShowBlurSide }) => {
   const [toggleSearch, setToggleSearch] = useState(true)
   const namePerson = JSON.parse(localStorage.getItem("user-info")).email.slice(0,4)
   console.log(namePerson)
@@ -26,6 +26,7 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
             {showSideSm ? <RiMenu2Fill className='menu' onClick={() => {
               setShowSideSm(false)
               setToggleSearch(true)
+              
             }
             } /> :
             <MdOutlineClose className='menu' onClick={() => {
@@ -47,7 +48,7 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
           </div>
           {/*notification & account */}
           <div className='right-topbar'>
-            <div className='notification'>
+            <div className='notification' onClick={() => setShowBlurSide(false)}>
               <img src={notification} alt="notification" />
             </div>
             <div className='account'>
@@ -57,7 +58,6 @@ const Topbar = ({ showSide, showSideSm, setShowSideSm }) => {
                 <h6>{namePerson}</h6>
                 <p>admin</p>
               </div>
-              
               <div className='more'>
                 <AccountMenu />
               </div>

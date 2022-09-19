@@ -70,4 +70,14 @@
   .save-change{
     width: 250px;
   }
+  //responsive phone
+  @include for-phone-only{
+    .change-pass {
+      button{
+        top: 37px;
+      }
+      
+      
+    }
+  }
 }
