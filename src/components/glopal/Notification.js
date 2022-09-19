@@ -26,7 +26,7 @@ const Notification = ({ showBlurSide, setShowBlurSide }) => {
         </div>
         <div className="alert bg-infoo" role="alert">
           <FiBox />
-          <h6 class="alert-text"> need to be packaged.</h6>
+          <h6 class="alert-text"> 4 new components added.</h6>
         </div>
 
         <div className="alert bg-warnn" role="alert">
@@ -36,7 +36,7 @@ const Notification = ({ showBlurSide, setShowBlurSide }) => {
 
         <div className="alert bg-successs" role="alert">
           <FiSend />
-          <h6 class="alert-text"> need to be packaged.</h6>
+          <h6 class="alert-text"> Escalator will turn off at 6:00 pm.</h6>
         </div>
         <div className="alert bg-danger" role="alert">
           <FiThumbsUp />

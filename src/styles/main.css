@@ -403,6 +403,12 @@ p, a, button {
 .content-notification .alert h6 {
   font-weight: 600;
 }
+@media (max-width: 599px) {
+  .content-notification .alert h6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
 .content-notification .bg-alert {
   background-color: #fdddd3;
   color: #923214;
@@ -738,7 +744,7 @@ p, a, button {
 }
 @media (max-width: 599px) {
   .main-blur-sidebar {
-    width: 26rem;
+    width: 29rem;
   }
 }
 

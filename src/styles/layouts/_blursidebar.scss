@@ -11,7 +11,7 @@
  transform: translateX(40rem);
  @extend %Ease ;
  @include for-phone-only{
-  width: 26rem;
+  width: 29rem;
  }
 }
 .show{

@@ -25,6 +25,11 @@
   }
   h6{
     font-weight: 600;
+    @include  for-phone-only{
+     font-size: 1.3rem;
+     font-weight: 400;
+    }
+
   }
  }
  .bg-alert{
