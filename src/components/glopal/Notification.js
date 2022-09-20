@@ -5,10 +5,6 @@ import { FiAlertTriangle } from 'react-icons/fi';
 import { FiBox } from 'react-icons/fi';
 import { FiSend } from 'react-icons/fi';
 import { FiThumbsUp } from 'react-icons/fi';
-
-
-
-
 import { MdOutlineClose } from 'react-icons/md';
 
 

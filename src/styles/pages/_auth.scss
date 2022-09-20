@@ -74,10 +74,10 @@
 
  
  //login
- .login-bage{
-  .header-login{
+ .auth-bage{
+  .header-auth{
    text-align: center;
-   padding: 40px 0;
+   padding: 10px 0;
    h3 , h5{
     padding: 15px 0;
    }
@@ -119,7 +119,7 @@
   width: 100%;
   margin: 0;
   padding: 0 20px;
-  .login-bage{
+  .auth-bage{
    padding: 10px;
    .input__field{
     width: 100%;
@@ -136,10 +136,42 @@
   }
 
  }
+ //sign up
+ .sign-up{
+  .colors{
+   .line{
+    background-color: $info-color;
+    height: 3px;
+   }
+  }
+  .checkbox{
+   @extend %FlexDefault;
+
+   label{
+    font-size: 1.6rem;
+    margin:1rem 1.2rem;
+    span{
+     color: $primary-light-color;
+    }
+   }
+  }
+  @include for-laptop-up{
+   .header-auth{
+    padding: 1px;
+   }
+   .input__field{
+    padding: 7px 10px;
+   }
+   .input__box {
+    margin: 10px 0;
+   }
+  
+  }
+ }
 }
 @include for-tablet-portrait-up{
 
- height: 100vh;
+ height: 120vh;
  width: 100%;
  margin: 0;
 }

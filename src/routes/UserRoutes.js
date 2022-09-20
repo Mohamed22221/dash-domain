@@ -10,6 +10,7 @@ import Account from '../pages/user/Account'
 import SideBar from '../layouts/SideBar'
 import BarsLayout from '../layouts/BarsLayout'
 import Profile from '../pages/user/Profile'
+import SignUp from '../components/user/auth/SignUp'
 
 const UserRoutes = () => {
 
@@ -40,7 +41,7 @@ const UserRoutes = () => {
         </Route>
         <Route path='/' element={<Login />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/login/analytics" element={<Analytics />} />
+        <Route path="/login/sign-up" element={<SignUp />} />
 
       </Routes>
     </div>

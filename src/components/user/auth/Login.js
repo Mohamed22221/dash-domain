@@ -47,8 +47,8 @@ const Login = () => {
 
  return (
   <SignWrapper>
-  <div className='login-bage '>
-    <div className='header-login'>
+  <div className='auth-bage'>
+    <div className='header-auth'>
       <h3>LOG IN</h3>
       <h5>Login Into Your Account</h5>
     </div>
@@ -57,7 +57,7 @@ const Login = () => {
     <InputField title="Password" type="password" placeholder="Password" value={pass} change={(e) =>setPassword(e.target.value)} />
     <a className='d-flex justify-content-end my-4'>forgot password ?</a>
     <button onClick={handelLogin} className='btn btn__primary  '>log in</button>
-    <p className='d-flex justify-content-center my-3'>Not have an account ?  <a> Sign up</a> </p>
+    <p className='d-flex justify-content-center my-3'>Not have an account ?  <Link to="/login/sign-up"> Sign up</Link> </p>
    </form>
   </div>
   </SignWrapper>
