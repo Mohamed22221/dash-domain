@@ -29,8 +29,8 @@ const AdminRoutes = () => {
       /> }>
        
       <Route path='/admin/dashboard' element={<DashboardAdmin showSide={showSide}/>} />
-      <Route path='/analytics' element={<Analytics showSide={showSide}/>} />
-      <Route path='/domain' element={<Domain showSide={showSide}/>} />
+      <Route path='/admin/invoices' element={<Analytics showSide={showSide}/>} />
+      <Route path='/admin/support' element={<Domain showSide={showSide}/>} />
       <Route path='/account' element={<Account showSide={showSide}/>} />
       <Route path='/profile' element={<Profile showSide={showSide}/>} />
 
