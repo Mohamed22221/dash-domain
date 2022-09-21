@@ -30,7 +30,7 @@ const UserRoutes = () => {
         showBlurSide={showBlurSide}
         setShowBlurSide={setShowBlurSide}
         /> }>
-
+         
         <Route path='/dashboard' element={<DashboardUser showSide={showSide}/>} />
         <Route path='/analytics' element={<Analytics showSide={showSide}/>} />
         <Route path='/domain' element={<Domain showSide={showSide}/>} />
@@ -44,6 +44,7 @@ const UserRoutes = () => {
         <Route path="/login/sign-up" element={<SignUp />} />
 
       </Routes>
+      
     </div>
   )
 }

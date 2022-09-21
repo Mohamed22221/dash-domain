@@ -20,15 +20,14 @@
 @import "./layouts/blursidebar";
 
 
-
-//folder pages
+//folder pages user
 @import "./pages/dashboardUser";
 @import "./pages/analyticsUser";
 @import "./pages/domainUser";
 @import "./pages/contactUser";
 @import "./pages/auth";
-
-
+//folder pages admin
+@import "./pages/dashboardAdmin";
 
 
 

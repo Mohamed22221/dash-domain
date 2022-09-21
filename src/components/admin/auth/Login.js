@@ -3,6 +3,7 @@ import React, {useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import InputField from '../../glopal/InputField';
 import SignWrapper from '../../glopal/SignWrapper';
+
 const Login = () => {
 
  const [email , setEmail] = useState("paul.hoang@vmodev.com")
@@ -11,7 +12,7 @@ const Login = () => {
  
  useEffect(() => {
   if (localStorage.getItem("user-info")) {
-   navigate("/dashboard")
+   navigate("/admin/dashboard")
   }
 
  }, [])
@@ -36,7 +37,7 @@ const Login = () => {
   .then(function (response) {
     console.log(JSON.stringify(config.data.email));
     localStorage.setItem("user-info",JSON.stringify(config.data))
-    navigate("/dashboard")
+    navigate("/admin/dashboard")
    
   })
   .catch(function (error) {
@@ -57,7 +58,6 @@ const Login = () => {
     <InputField title="Password" type="password" placeholder="Password" value={pass} change={(e) =>setPassword(e.target.value)} />
     <a className='d-flex justify-content-end my-4'>forgot password ?</a>
     <button onClick={handelLogin} className='btn btn__primary  '>log in</button>
-    <p className='d-flex justify-content-center my-3'>Not have an account ?  <Link to="/login/sign-up"> Sign up</Link> </p>
    </form>
   </div>
   </SignWrapper>
