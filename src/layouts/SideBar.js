@@ -41,6 +41,8 @@ const SideBar = ({ showSide, setShowSide, showSideSm, setShowSideSm }) => {
             {location === "admin" ? <HiOutlineChat />: <MdDomainVerification />}
             <p >{location === "admin" ? "Support" : "Domain"}</p>
           </NavLink>
+          {location === "admin" && <h5 className='mx-5'>{showSide === true && "Managment"}</h5>}
+          
           <NavLink to={location === "admin" ? "/admin/users" : "/account"}  className='route ' onClick={() => setShowSideSm(true)}>
             <BiUser />
             <p >{location === "admin" ? "Users" : "My account"}</p>

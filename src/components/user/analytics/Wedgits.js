@@ -25,7 +25,7 @@ const Wedgits = () => {
      </motion.div >
      <div className='col-12  col-xl-6 '>
       <motion.div initial={initial} animate={animate} transition={transition} className='counter my-4 mx-2  '>
-       <RedialBar percentage="70" name="Storage" />
+       <RedialBar percentage="70" name="Storage" color='#FF9800' />
        <h4 >Storage usage</h4>
 
       </motion.div >

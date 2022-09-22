@@ -6,7 +6,7 @@
 /* (--6--) absolute position vertically center*/
 /* (--7--) absolute position vertically center*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
+.wedgits-invoices .item-wedgits .about-item, .top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -219,6 +219,91 @@ p, a, button {
   .item-bg h5 {
     font-size: 1.5rem;
   }
+}
+
+.main-tabel .tabel tbody tr td {
+  display: flex;
+  align-items: center;
+}
+
+.main-tabel {
+  margin: 2rem 0;
+}
+.main-tabel .tabel {
+  width: 100%;
+}
+.main-tabel .tabel thead {
+  background-color: #FFEDD0;
+}
+.main-tabel .tabel thead tr {
+  display: flex;
+  font-size: 1.6rem;
+}
+.main-tabel .tabel thead tr th {
+  padding: 2rem;
+  width: 100%;
+  color: #2A2E33 !important;
+}
+.main-tabel .tabel thead tr th:nth-child(1) {
+  width: 60px;
+}
+.main-tabel .tabel tbody {
+  vertical-align: middle;
+}
+.main-tabel .tabel tbody tr {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #d1d1d1;
+}
+.main-tabel .tabel tbody tr .active-person {
+  position: relative;
+}
+.main-tabel .tabel tbody tr .active-person::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  background-color: #FFEDD0;
+  border-radius: 0px 20px 20px 0px;
+}
+.main-tabel .tabel tbody tr td {
+  padding: 2.2rem;
+  width: 50%;
+  color: #A6A6A6;
+  font-size: 16px;
+  justify-content: flex-start !important;
+}
+.main-tabel .tabel tbody tr td:nth-child(1) {
+  width: 60px;
+}
+.main-tabel .tabel tbody tr td:nth-child(1) input {
+  width: 100%;
+  border: 1px solid #A6A6A6;
+}
+.main-tabel .tabel tbody tr td:nth-child(2) {
+  color: black;
+  margin-bottom: 4px;
+}
+.main-tabel .tabel tbody tr td:nth-child(2) img {
+  margin: 0 20px 0 5px;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-tabel .tabel tbody tr td:last-child svg {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.main-tabel .tabel tbody .green {
+  color: #0AB28B;
+}
+.main-tabel .tabel tbody .blue {
+  color: #287AFB;
+}
+.main-tabel .tabel tbody .red {
+  color: #E24A34;
 }
 
 .btn {
@@ -778,7 +863,7 @@ p, a, button {
   cursor: pointer;
 }
 
-.website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
+.wedgits-invoices, .website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
 .dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
@@ -1365,4 +1450,51 @@ p, a, button {
 }
 .website-overview .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center {
   display: none;
+}
+
+.wedgits-invoices .item-wedgits .about-item .counter {
+  width: 45%;
+}
+.wedgits-invoices .item-wedgits .about-item .text-about-item h6, .wedgits-invoices .item-wedgits .about-item .text-about-item h5, .wedgits-invoices .item-wedgits .about-item .text-about-item p {
+  padding-block: 2px;
+}
+.wedgits-invoices .item-wedgits .about-item .text-about-item h6 {
+  font-weight: 500;
+}
+.wedgits-invoices .item-wedgits .about-item .text-about-item p {
+  font-size: 1.3rem;
+  color: #A6A6A6;
+}
+@media (max-width: 1200px) {
+  .wedgits-invoices .item-wedgits {
+    border-right: 3px dotted #A6A6A6;
+    padding: 10px;
+  }
+  .wedgits-invoices .item-wedgits .counter {
+    width: 60%;
+  }
+}
+.wedgits-invoices .item-wedgits:not(:last-child) {
+  border-right: 3px dotted #A6A6A6;
+}
+
+.services-type .services {
+  justify-content: space-between;
+}
+.services-type .services .input__select, .services-type .services .input__field, .services-type .services .search, .services-type .services .search-input {
+  background-color: white;
+  margin: 8px;
+  border: 0;
+  color: black !important;
+}
+.services-type .services .search-input input, .services-type .services .search-input svg {
+  color: #A6A6A6;
+  font-size: 1.5rem;
+}
+.services-type .services .search-input input {
+  width: 100%;
+}
+.services-type .services .search-input svg {
+  margin-right: 15px;
+  font-size: 2.2rem;
 }/*# sourceMappingURL=main.css.map */

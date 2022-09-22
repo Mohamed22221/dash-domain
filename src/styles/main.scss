@@ -9,6 +9,7 @@
 @import "./base/utilities";
 @import "./base/animation";
 //folder components
+@import "./components/Tabel";
 @import "./components/buttons";
 @import "./components/inputs";
 @import "./components/notification";
@@ -28,6 +29,8 @@
 @import "./pages/auth";
 //folder pages admin
 @import "./pages/dashboardAdmin";
+@import "./pages/invoices";
+
 
 
 

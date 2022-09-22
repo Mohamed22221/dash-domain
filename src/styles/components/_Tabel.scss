@@ -1,0 +1,112 @@
+//tabel
+%flex  {
+  display: flex;
+  align-items: center;
+ }
+ %main-grid-style{
+  background-color: white;
+  box-shadow:$box-shadow-light;
+  border-radius: 20px;
+  padding: 30px 15px;
+ }
+ 
+.main-tabel {
+ margin: 2rem 0;
+ //parent tabel
+ .tabel {
+   width: 100%;
+   thead {
+     background-color:#FFEDD0 ;
+     tr {
+       display: flex;
+       font-size: 1.6rem;
+       th {
+         padding: 2rem;
+         width: 100%;
+         color:#2A2E33 !important;
+       }
+
+       th:nth-child(1) {
+         width: 60px;
+       }
+     }
+   }
+
+   //body tabel
+   tbody {
+     vertical-align: middle;
+
+     tr {
+       display: flex;
+       justify-content: space-between;
+       background-color: white;
+       border-bottom: 1px solid #d1d1d1;
+       .active-person{
+         position: relative;
+         &::after{
+           content: "";
+           position: absolute;
+           left: 0;
+           height: 100%;
+           width: 10px;
+           background-color: #FFEDD0;
+           border-radius: 0px 20px 20px 0px;
+
+         }
+       }
+       td {
+         padding: 2.2rem;
+         width: 50%;
+         color: $info-color;
+         font-size: 16px;
+         @extend %flex;
+         justify-content: flex-start !important;
+       }
+
+       td:nth-child(1) {
+         width: 60px;
+
+
+         input {
+           width: 100%;
+           border: 1px solid $info-color;
+         }
+       }
+
+       td:nth-child(2) {
+
+         color: black;
+         margin-bottom: 4px;
+
+         img {
+           margin: 0 20px 0 5px;
+           width: 50px;
+           height: 40px;
+           border-radius: 50%;
+
+         }
+       }
+       td:last-child{
+        svg{
+         font-size: 2.5rem;
+         cursor: pointer;
+        }
+       }
+
+     }
+     .green{
+      color: #0AB28B  ;
+     }
+     .blue{
+      color: #287AFB
+      ;
+     }
+     .red{
+      color: #E24A34
+      ;
+     }
+   }
+
+ }
+
+}

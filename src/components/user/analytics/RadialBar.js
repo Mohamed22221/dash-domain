@@ -17,7 +17,7 @@ class RedialBar extends React.Component {
      },
     },
     labels: [props.name],
-    colors: [ '#FF9800']
+    colors: [props.color]
    },
 
 
