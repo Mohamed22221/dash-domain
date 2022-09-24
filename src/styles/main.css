@@ -18,6 +18,21 @@
   align-items: center;
 }
 
+.main-tabel .data-person .about-person .main-date .item, .main-tabel .data-person .about-person .main-about .item {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
 .wedgets-analytics .left-wedgets .timer {
   -webkit-display: flex;
   -moz-display: flex;
@@ -34,6 +49,25 @@
   align-items: center;
 }
 
+.main-tabel .data-person .about-person .button, .main-tabel .data-person .about-person .img-person {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
 .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
 .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .content-notification .title-notification, .item-bg {
   -webkit-display: flex;
@@ -45,6 +79,22 @@
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.main-tabel .data-person .about-person .main-date, .main-tabel .data-person .about-person .main-about {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  -o-justify-content: space-evenly;
+  justify-content: space-evenly;
   -moz-align-items: center;
   -ms-align-items: center;
   -o-align-items: center;
@@ -228,9 +278,10 @@ p, a, button {
 
 .main-tabel {
   margin: 2rem 0;
+  display: flex;
 }
 .main-tabel .tabel {
-  width: 100%;
+  box-shadow: 0px 4px 8px rgba(45, 45, 45, 0.16);
 }
 .main-tabel .tabel thead {
   background-color: #FFEDD0;
@@ -265,7 +316,7 @@ p, a, button {
   left: 0;
   height: 100%;
   width: 10px;
-  background-color: #FFEDD0;
+  background-color: #FBA30D;
   border-radius: 0px 20px 20px 0px;
 }
 .main-tabel .tabel tbody tr td {
@@ -304,6 +355,105 @@ p, a, button {
 }
 .main-tabel .tabel tbody .red {
   color: #E24A34;
+}
+.main-tabel .sm-width {
+  width: 70%;
+}
+@media (max-width: 1400px) {
+  .main-tabel .sm-width {
+    width: 50%;
+  }
+}
+.main-tabel .xl-width {
+  width: 100%;
+}
+.main-tabel .data-person {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(45, 45, 45, 0.16);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 0 1rem;
+  padding-bottom: 15px;
+}
+.main-tabel .data-person .about-person .img-person img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.main-tabel .data-person .about-person .img-person h5, .main-tabel .data-person .about-person .img-person p {
+  padding: 4px 0;
+}
+.main-tabel .data-person .about-person .img-person p {
+  color: #A6A6A6;
+}
+.main-tabel .data-person .about-person .header {
+  background-color: #FFEDD0;
+  padding: 2.2rem 0;
+  margin-bottom: 20px;
+}
+.main-tabel .data-person .about-person .header h5 {
+  margin: 0 20px;
+}
+.main-tabel .data-person .about-person .main-date, .main-tabel .data-person .about-person .main-about {
+  margin: 15px 0 15px 0;
+}
+.main-tabel .data-person .about-person .main-date .item h6, .main-tabel .data-person .about-person .main-about .item h6 {
+  padding: 5px 0;
+}
+.main-tabel .data-person .about-person .main-date .item p, .main-tabel .data-person .about-person .main-about .item p {
+  color: #A6A6A6;
+  font-size: 1.5rem;
+}
+.main-tabel .data-person .about-person .main-date .item svg, .main-tabel .data-person .about-person .main-about .item svg {
+  font-size: 2.3rem;
+  margin: 0 5px;
+  color: #2A2E33;
+  opacity: 0.8;
+}
+.main-tabel .show {
+  display: flex;
+  width: 30%;
+}
+@media (max-width: 1400px) {
+  .main-tabel .show {
+    width: 50%;
+  }
+}
+.main-tabel .hide {
+  display: none;
+  width: 0;
+}
+.main-tabel .green {
+  color: #0AB28B !important;
+}
+.main-tabel .blue {
+  color: #287AFB !important;
+}
+.main-tabel .red {
+  color: #E24A34 !important;
+}
+@media (max-width: 1400px) {
+  .main-tabel {
+    flex-direction: column-reverse;
+  }
+  .main-tabel .tabel {
+    width: 100%;
+  }
+  .main-tabel .show {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .main-tabel .tabel {
+    overflow-x: scroll;
+    width: 100%;
+    display: inline;
+  }
 }
 
 .btn {
@@ -1486,6 +1636,11 @@ p, a, button {
   margin: 8px;
   border: 0;
   color: black !important;
+}
+@media (max-width: 992px) {
+  .services-type .services .input__select, .services-type .services .input__field, .services-type .services .search, .services-type .services .search-input {
+    margin: 8px 0;
+  }
 }
 .services-type .services .search-input input, .services-type .services .search-input svg {
   color: #A6A6A6;

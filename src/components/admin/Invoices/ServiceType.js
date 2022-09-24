@@ -1,8 +1,12 @@
 import React from 'react'
+import { motion } from "framer-motion"
 import { BsSearch } from 'react-icons/bs';
 const ServiceType = () => {
+  const initial = { x: 0, y: -12, opacity: 0 }
+  const animate = { x: 0, y: 0, opacity: 1 }
+  const transition = { duration: 0.5 }
   return (
-    <div className='services-type space-section'>
+    <motion.div initial={initial} animate={animate} transition={transition} className='services-type space-section'>
       <h5>Service Type</h5>
       <div className='services row my-5'>
           <select className="input input__select  col-xl-3" >
@@ -19,10 +23,8 @@ const ServiceType = () => {
           <BsSearch/>
           <input placeholder="Search" />
           </div>
-
-
       </div>
-    </div>
+    </motion.div >
   )
 }
 

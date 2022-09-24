@@ -18,7 +18,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 
-export default function AccountMenu() {
+export default function AccountMenu({location}) {
  const [anchorEl, setAnchorEl] = React.useState(null);
  const navigate = useNavigate()
  const open = Boolean(anchorEl);
@@ -30,7 +30,7 @@ export default function AccountMenu() {
  };
  const HandelLogout = () =>{
   localStorage.removeItem("user-info")
-  navigate("/login")
+  navigate(location =="admin" ? "/admin/login":"/login" )
  }
  return (
   <React.Fragment>
@@ -84,7 +84,7 @@ export default function AccountMenu() {
     transformOrigin={{ horizontal: 'right', vertical: 'top' }}
     anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
    >
-    <Link to="profile">
+    <Link to={location =="admin" ? "/admin/profile":"/profile"}>
     <MenuItem>
      <BsPerson
       style={{

@@ -48,6 +48,11 @@
    margin: 8px;
    border: 0;
    color: black !important;
+   @include for-tablet-landscape-up {
+    
+     margin: 8px 0;
+    
+  } 
   }
   .search-input{
    input , svg{

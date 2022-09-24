@@ -8,7 +8,7 @@ const Wedgets = () => {
  const transition = { duration: 0.5 }
 
  return (
-  <div className='wedgits-invoices space-section row'>
+  <motion.div initial={initial} animate={animate} transition={transition} className='wedgits-invoices space-section row'>
    <div className='item-wedgits col-lg-6 col-xl-3'>
     <div className='about-item'>
      <div className='counter'>
@@ -59,7 +59,7 @@ const Wedgets = () => {
    </div>
 
 
-  </div>
+  </motion.div>
  )
 }
 
