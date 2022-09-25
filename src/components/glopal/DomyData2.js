@@ -1,11 +1,10 @@
 const DomyData2 = [
  {
-
    client: "Lindsey Stroud",
    start: "22/2/2022",
    end: "22/4/2022",
-   amount: "207 KWD",
    type: "Shard host",
+   amount : "205 kw"
 
  },
  {
@@ -13,8 +12,9 @@ const DomyData2 = [
   client: "Lindsey Stroud",
   start: "22/2/2022",
   end: "22/4/2022",
-  amount: "207 KWD",
   type: "Shard host",
+  amount : "205 kw"
+
 
 },
 {
@@ -22,8 +22,9 @@ const DomyData2 = [
  client: "Lindsey Stroud",
  start: "22/2/2022",
  end: "22/4/2022",
- amount: "207 KWD",
  type: "Domain",
+ amount : "205 kw"
+
 
 },
 {
@@ -31,8 +32,9 @@ const DomyData2 = [
  client: "Lindsey Stroud",
  start: "22/2/2022",
  end: "22/4/2022",
- amount: "207 KWD",
  type: "SMS",
+ amount : "205 kw"
+
 
 },
 {
@@ -40,8 +42,8 @@ const DomyData2 = [
   client: "Lindsey Stroud",
   start: "22/2/2022",
   end: "22/4/2022",
-  amount: "207 KWD",
   type: "SMS",
+  amount : "205 kw"
  
  },
 

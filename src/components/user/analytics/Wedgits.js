@@ -30,7 +30,7 @@ const Wedgits = () => {
 
       </motion.div >
       <motion.div initial={initial} animate={animate} transition={transition} className='counter my-4 mx-2  '>
-       <RedialBar percentage="80" name="Storage" />
+       <RedialBar percentage="50" name="Storage" color='#FF9800' />
        <h4 >Storage usage</h4>
 
       </motion.div >

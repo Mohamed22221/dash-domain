@@ -6,7 +6,7 @@
 /* (--6--) absolute position vertically center*/
 /* (--7--) absolute position vertically center*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.wedgits-invoices .item-wedgits .about-item, .top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
+.main-information-user .card-user .about-card .item h5, .main-information-user .card-user .head-card, .wedgits-invoices .item-wedgits .about-item, .top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -68,7 +68,7 @@
   flex-direction: column;
 }
 
-.dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
+.main-information-user .card-user .about-card, .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
 .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .content-notification .title-notification, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
@@ -1013,7 +1013,7 @@ p, a, button {
   cursor: pointer;
 }
 
-.wedgits-invoices, .website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
+.main-information-user .main-packeges .body-packages .item-package, .main-information-user .main-packeges, .main-information-user .card-user, .wedgits-invoices, .website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
 .dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
@@ -1652,4 +1652,95 @@ p, a, button {
 .services-type .services .search-input svg {
   margin-right: 15px;
   font-size: 2.2rem;
+}
+
+.main-information-user .card-user .head-card {
+  padding: 8px 0 20px 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.main-information-user .card-user .head-card img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.main-information-user .card-user .head-card .about-head {
+  margin: 0 10px 0 20px;
+}
+.main-information-user .card-user .head-card .about-head p {
+  margin: 10px 0px;
+  color: #A6A6A6;
+}
+.main-information-user .card-user .about-card .item {
+  padding: 20px 20px;
+}
+.main-information-user .card-user .about-card .item h5 {
+  margin: 10px 0;
+}
+.main-information-user .card-user .about-card .item h5 span {
+  margin: 0 5px;
+}
+.main-information-user .card-user .about-card .item h5 span svg {
+  font-size: 24px;
+  color: #2A2E33;
+}
+.main-information-user .card-user .about-card .item p {
+  color: #A6A6A6;
+}
+@media (max-width: 768px) {
+  .main-information-user .card-user .about-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-information-user .card-user .about-card .item {
+    padding: 5px 5px;
+  }
+}
+.main-information-user .main-packeges .three-buttons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .main-information-user .main-packeges .three-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.main-information-user .main-packeges .body-packages {
+  padding: 20px 0 0 0;
+  margin: 10px 0 0 0;
+}
+.main-information-user .main-packeges .body-packages .item-package {
+  position: relative;
+  margin: 30px 0;
+  padding: 40px 5px;
+  border: 2px solid #FBA30D;
+  box-shadow: 0px 4px 4px rgba(75, 75, 75, 0.16);
+}
+.main-information-user .main-packeges .body-packages .item-package h3, .main-information-user .main-packeges .body-packages .item-package h4 {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+}
+.main-information-user .main-packeges .body-packages .item-package h3 {
+  color: #FBA30D;
+}
+.main-information-user .main-packeges .body-packages .item-package h4 span {
+  color: #A6A6A6 !important;
+}
+.main-information-user .main-packeges .body-packages .item-package .hide {
+  display: none;
+}
+.main-information-user .main-packeges .body-packages .item-package .title {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 20px;
+  background-color: #2A2E33;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

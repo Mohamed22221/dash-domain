@@ -8,6 +8,8 @@ import BarsLayout from '../layouts/BarsLayout'
 import Profile from '../pages/user/Profile'
 import DashboardAdmin from '../pages/admin/DashboardAdmin'
 import Invoices from '../pages/admin/Invoices'
+import Users from '../pages/admin/Users';
+import InformationUser from '../components/admin/users/InformationUser';
 
 const AdminRoutes = () => {
   const [showSide, setShowSide] = useState(true)
@@ -28,7 +30,10 @@ const AdminRoutes = () => {
       <Route path='/admin/dashboard' element={<DashboardAdmin showSide={showSide}/>} />
       <Route path='/admin/invoices' element={<Invoices showSide={showSide}/>} />
       <Route path='/admin/support' element={<Domain showSide={showSide}/>} />
-      <Route path='/admin/account' element={<Account showSide={showSide}/>} />
+      <Route path='/admin/users' element={<Users showSide={showSide}/>} />
+      <Route path="admin/user" element={<InformationUser showSide={showSide} />} >
+      <Route path=":userid" element={<InformationUser showSide={showSide}/>} />
+      </Route>
       <Route path='/admin/profile' element={<Profile showSide={showSide}/>} />
 
       

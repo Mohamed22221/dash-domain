@@ -3,9 +3,9 @@ import React from 'react'
 //images
 import avatar from "../../../assets/images/main/person.jpeg"
 //icons
-import { BsCalendarDate } from 'react-icons/bs';
-import { BiMoney } from 'react-icons/bi';
+import { AiOutlineMail } from 'react-icons/ai';
 import { VscFeedback } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,7 +13,6 @@ import { VscFeedback } from 'react-icons/vsc';
 
 const DetailsPerson = ({ checked, detailsPerson, keyChecked }) => {
  return (
-
   <div
    className={
     checked[keyChecked] === true
@@ -26,37 +25,27 @@ const DetailsPerson = ({ checked, detailsPerson, keyChecked }) => {
    <div className='about-person'>
     <div className='header'>
      <h5>Card Deatails</h5>
-
     </div>
     <div className='img-person'>
      <img src={avatar} alt="person" />
      <h5>{detailsPerson.client}</h5>
-     <p>#123</p>
+     <p>#{detailsPerson.id}</p>
     </div>
     <div className='main-date'>
      <div className='item'>
-      <h6>Start Date <span><BsCalendarDate/></span></h6>
-      <p>{detailsPerson.start}</p>
+      <h6>Email <span><AiOutlineMail/></span></h6>
+      <p>{detailsPerson.email}</p>
      </div>
      <div className='item'>
-      <h6>End Date <span><BsCalendarDate/></span></h6>
-      <p>{detailsPerson.end}</p>
-     </div>
-
-
-    </div>
-    <div className='main-about'>
-     <div className='item'>
-      <h6>Amount <span><BiMoney/></span></h6>
-      <p>{detailsPerson.amount}</p>
-     </div>
-     <div className='item'>
-      <h6>Type<span><VscFeedback/></span></h6>
+      <h6>Invoice <span><VscFeedback/></span></h6>
       <p className={detailsPerson.type === "Shard host" ? "green" : detailsPerson.type === "Domain" ? "blue" : "red"}>{detailsPerson.type}</p>
      </div>
     </div>
     <div className='button'>
+      <Link to={`/admin/user/${detailsPerson.id}`}>
+      
     <button className=" btn btn btn__primary ">See More</button>
+    </Link>
     </div>
    </div>
 
