@@ -6,7 +6,7 @@
 /* (--6--) absolute position vertically center*/
 /* (--7--) absolute position vertically center*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.main-information-user .card-user .about-card .item h5, .main-information-user .card-user .head-card, .wedgits-invoices .item-wedgits .about-item, .top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
+.main-support .main-comments-support .comments-support .head-comments .person, .main-support .main-items-support .items-support .toggle-button, .main-information-user .card-user .about-card .item h5, .main-information-user .card-user .head-card, .wedgits-invoices .item-wedgits .about-item, .top-wedgits .item-wedgets .bg-item, .sign-wrapper .right-sign-wrapper .sign-up .checkbox, .topbar .main-topbar .box .right-topbar .account, .topbar .main-topbar .box .right-topbar, .content-notification .alert, .input {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -68,7 +68,7 @@
   flex-direction: column;
 }
 
-.main-information-user .card-user .about-card, .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
+.main-support .main-comments-support .reply, .main-support .main-comments-support .comments-support .head-comments, .main-support .main-items-support .items-support .data-support .item-support .date, .main-information-user .card-user .about-card, .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
 .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .content-notification .title-notification, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
@@ -101,7 +101,7 @@
   align-items: center;
 }
 
-.main-blur-sidebar, .topbar .search, .sidehide .arrow svg, .sidehide .links p, .sidehide .logo img, .sidebar .arrow svg, .sidebar .links p, .sidebar .logo, .sidebar, .sub-container-sm, .sub-container, .container-inline-sm, .container-inline, .btn {
+.main-support .main-items-support .items-support .data-support .item-support .date p, .main-support .main-items-support .items-support .data-support .item-support, .main-blur-sidebar, .topbar .search, .sidehide .arrow svg, .sidehide .links p, .sidehide .logo img, .sidebar .arrow svg, .sidebar .links p, .sidebar .logo, .sidebar, .sub-container-sm, .sub-container, .container-inline-sm, .container-inline, .btn {
   transition: all 0.35s ease-in-out;
 }
 
@@ -1013,7 +1013,7 @@ p, a, button {
   cursor: pointer;
 }
 
-.main-information-user .main-packeges .body-packages .item-package, .main-information-user .main-packeges, .main-information-user .card-user, .wedgits-invoices, .website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
+.main-support .items-support, .main-support .comments-support, .main-information-user .main-packeges .body-packages .item-package, .main-information-user .main-packeges, .main-information-user .card-user, .wedgits-invoices, .website-overview .right-item, .website-overview .left-item, .top-wedgits .item-wedgets .bg-item, .main-profile, .contact-information, .domain-overview,
 .dns-Tabel, .main-vps-serveses, .wedgets-analytics .right-wedgets, .wedgets-analytics .left-wedgets .counter,
 .wedgets-analytics .left-wedgets .timer, .traffic-overview, .wedgits .right-wedgets, .wedgits .left-wedgets .item-wedgets {
   background-color: white;
@@ -1743,4 +1743,131 @@ p, a, button {
   font-size: 20px;
   background-color: #2A2E33;
   color: white;
+}
+
+.main-support .items-support, .main-support .comments-support {
+  margin-block: 15px;
+}
+.main-support .main-items-support .items-support {
+  margin-right: 20px;
+}
+.main-support .main-items-support .items-support .toggle-button {
+  margin-block: 10px;
+}
+.main-support .main-items-support .items-support .toggle-button button {
+  padding: 8px 12px;
+  margin-inline: 5px;
+  font-weight: 600;
+  color: #A6A6A6;
+}
+.main-support .main-items-support .items-support .toggle-button .active {
+  color: black;
+}
+.main-support .main-items-support .items-support .data-support .item-support {
+  background-color: #F5F6FA;
+  border-radius: 1.4rem;
+  padding: 20px 15px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.main-support .main-items-support .items-support .data-support .item-support .date {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.main-support .main-items-support .items-support .data-support .item-support .date p {
+  font-size: 1.3rem;
+  color: #A6A6A6;
+}
+.main-support .main-items-support .items-support .data-support .item-support .date span {
+  margin: 0 5px;
+  opacity: 0;
+}
+.main-support .main-items-support .items-support .data-support .item-support .date span svg {
+  font-size: 15px;
+}
+.main-support .main-items-support .items-support .data-support .item-support:hover {
+  background-color: #FBA30D;
+  color: white;
+}
+.main-support .main-items-support .items-support .data-support .item-support:hover p {
+  color: whitesmoke;
+}
+.main-support .main-items-support .items-support .data-support .item-support:hover span {
+  opacity: 1;
+}
+.main-support .main-items-support .items-support .data-support .active-item {
+  background-color: #FBA30D;
+  color: white;
+}
+.main-support .main-items-support .items-support .data-support .active-item p {
+  color: whitesmoke !important;
+}
+.main-support .main-items-support .items-support .data-support .active-item span {
+  opacity: 1 !important;
+}
+@media (max-width: 992px) {
+  .main-support .main-items-support .items-support {
+    margin-right: 0px;
+  }
+}
+.main-support .main-comments-support h3 {
+  margin: 10px 0;
+}
+.main-support .main-comments-support .comments-support .head-comments .person img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.main-support .main-comments-support .comments-support .head-comments .person h5 {
+  font-weight: 600;
+  margin: 0 5px 0 15px;
+}
+.main-support .main-comments-support .comments-support .head-comments .date {
+  font-size: 1.3rem;
+  color: black;
+  margin: 0;
+}
+.main-support .main-comments-support .comments-support p {
+  padding: 25px 0 0 0;
+  color: #A6A6A6;
+  font-size: 1.5rem;
+}
+.main-support .main-comments-support .reply {
+  background-color: white;
+  padding: 12px 10px;
+  border-radius: 1rem;
+}
+.main-support .main-comments-support .reply .input {
+  padding: 0px 10px;
+  width: 100%;
+  margin: 0px 0;
+  font-size: 15px;
+  color: #A6A6A6;
+}
+.main-support .main-comments-support .reply .input::-moz-placeholder {
+  color: #A6A6A6;
+}
+.main-support .main-comments-support .reply .input:-ms-input-placeholder {
+  color: #A6A6A6;
+}
+.main-support .main-comments-support .reply .input::placeholder {
+  color: #A6A6A6;
+}
+.main-support .main-comments-support .reply button {
+  background-color: #FBA30D;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+@media (max-width: 599px) {
+  .main-support .main-comments-support h3 {
+    font-size: 1.8rem;
+  }
+  .main-support .main-comments-support .head-comments h5 {
+    font-size: 1.4rem;
+    margin: 0 2px 0 10px;
+  }
+  .main-support .main-comments-support .head-comments .date {
+    font-size: 1rem !important;
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 
 const Packages = () => {
  const [active, setActive] = useState("Hosting")
+ //motion effict
  const initial = { x: 0, y: -12, opacity: 0 }
  const animate = { x: 0, y: 0, opacity: 1 }
  const transition = { duration: 0.5 }

@@ -63,7 +63,7 @@ const Tabel = () => {
                   <input type="checkbox" checked={checked[index]} onChange={(e) => HandelChangeCheckbox(e, index, item)}
                   />
                 </td>
-                <td><img src={preson} />{item.client} </td>
+                <td><img src={preson} alt="person" />{item.client} </td>
                 <td>#{item.id}</td>
                 <td>{item.email}</td>
                 <td className={item.type === "Shard host" ? "green" : item.type === "Domain" ? "blue" : "red"}>

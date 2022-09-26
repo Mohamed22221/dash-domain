@@ -21,19 +21,19 @@ const SignWrapper = (props) => {
       <div className=' col-md-6 main-left' >
         <div className='left-sign-wrapper '>
           <div className='header'>
-            <img src={logo} />
+            <img src={logo} alt="logo" />
             <h1>Start your domain with us.</h1>
           </div>
         
         <Slider {...settings} className=" p-0">
           <div>
-          <img src={slide1} />
+          <img src={slide1} alt="slider" />
           </div>
           <div>
-          <img src={slide2} />
+          <img src={slide2} alt="slider" />
           </div>
           <div>
-          <img src={slide3} />
+          <img src={slide3} alt="slider" />
           </div>
   
         </Slider>
