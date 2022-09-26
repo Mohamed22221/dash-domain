@@ -2,16 +2,22 @@
 import React from 'react'
 import comment from "../../../assets/images/main/comment.png"
 import arrow from "../../../assets/images/icons/arrow.svg"
+import { motion } from "framer-motion"
 
 const CommentsSupport = ({ DataComment }) => {
+    // motion effict
+    const initial = { x: 0, y: -12, opacity: 0 }
+    const animate = { x: 0, y: 0, opacity: 1 }
+    const transition = { duration: 0.5 }
+  
   return (
     <div className=' col-lg-7 col-xl-8'>
-      <div className='main-comments-support'>
+      <motion.div initial={initial} animate={animate} transition={transition} className='main-comments-support'>
         <h3>{DataComment.title}</h3>
         
-          {DataComment.comments.map((item) => {
+          {DataComment.comments.map((item , index) => {
             return (
-              <div className='comments-support'>
+              <div className='comments-support' key={index}>
                 <div className='head-comments'>
                   <div className='person'>
                     <img src={comment} alt="comment"  />
@@ -32,7 +38,7 @@ const CommentsSupport = ({ DataComment }) => {
 
           </div>
         
-      </div>
+      </motion.div >
 
     </div>
   )

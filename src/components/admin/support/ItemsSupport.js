@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { GoComment } from 'react-icons/go';
+import { motion } from "framer-motion"
 
 
 const ItemsSupport = ({ DataSupport, DataSupportClosed,setDataComment }) => {
@@ -12,11 +13,14 @@ const ItemsSupport = ({ DataSupport, DataSupportClosed,setDataComment }) => {
   useEffect(() => {
     setActiveItem({ 0: "item-support active-item" });
   }, [setActiveItem, setDataComment ])
-
+  // motion effict
+  const initial = { x: 0, y: -12, opacity: 0 }
+  const animate = { x: 0, y: 0, opacity: 1 }
+  const transition = { duration: 0.5 }
 
   return (
     <div className='main-items-support col-lg-5 col-xl-4 p-0'>
-      <div className='items-support '>
+      <motion.div initial={initial} animate={animate} transition={transition} className='items-support '>
         {/*two button toggle*/}
         <div className='toggle-button'>
           <button className={toggleActive ? 'active' : ""} onClick={() => setToggleActive(true)}>
@@ -59,7 +63,7 @@ const ItemsSupport = ({ DataSupport, DataSupportClosed,setDataComment }) => {
 
         </div>
 
-      </div>
+      </motion.div >
     </div>
   )
 }
