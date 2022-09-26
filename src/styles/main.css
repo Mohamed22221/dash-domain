@@ -1826,6 +1826,7 @@ p, a, button {
   font-size: 1.3rem;
   color: black;
   margin: 0;
+  padding: 0;
 }
 .main-support .main-comments-support .comments-support p {
   padding: 25px 0 0 0;
@@ -1868,6 +1869,5 @@ p, a, button {
   }
   .main-support .main-comments-support .head-comments .date {
     font-size: 1rem !important;
-    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */
