@@ -11,6 +11,7 @@ import Invoices from '../pages/admin/Invoices'
 import Users from '../pages/admin/Users';
 import InformationUser from '../components/admin/users/InformationUser';
 import Support from '../pages/admin/Support';
+import Admins from '../pages/admin/Admins';
 
 const AdminRoutes = () => {
   const [showSide, setShowSide] = useState(true)
@@ -36,6 +37,8 @@ const AdminRoutes = () => {
       <Route path=":userid" element={<InformationUser showSide={showSide}/>} />
       </Route>
       <Route path='/admin/profile' element={<Profile showSide={showSide}/>} />
+      <Route path='/admin/admins' element={<Admins showSide={showSide}/>} />
+
 
       
       </Route>
