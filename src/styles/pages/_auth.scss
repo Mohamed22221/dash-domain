@@ -143,6 +143,9 @@
     background-color: $info-color;
     height: 3px;
    }
+   .active{
+    background-color: $primary-light-color !important;
+   }
   }
   .checkbox{
    @extend %FlexDefault;

@@ -1520,6 +1520,9 @@ p, a, button {
   background-color: #A6A6A6;
   height: 3px;
 }
+.sign-wrapper .right-sign-wrapper .sign-up .colors .active {
+  background-color: #FBA30D !important;
+}
 .sign-wrapper .right-sign-wrapper .sign-up .checkbox label {
   font-size: 1.6rem;
   margin: 1rem 1.2rem;

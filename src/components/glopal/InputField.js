@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputField = ({ value, setValue,change , title, type, placeholder }) => {
+const InputField = ({ value, setValue,change , title, type, placeholder ,idInbuts }) => {
 
   return (
     <div className="input__box">
@@ -8,6 +8,7 @@ const InputField = ({ value, setValue,change , title, type, placeholder }) => {
       <input
         type={type ? `${type}` : "text"}
         className="input input__field"
+        id={idInbuts}
         value={value}
         onChange={change}
         placeholder={placeholder ? placeholder : ""}
