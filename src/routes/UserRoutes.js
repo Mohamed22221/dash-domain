@@ -11,6 +11,8 @@ import SideBar from '../layouts/SideBar'
 import BarsLayout from '../layouts/BarsLayout'
 import Profile from '../pages/user/Profile'
 import SignUp from '../components/user/auth/SignUp'
+import ForgetPassword from '../components/user/auth/ForgetPassword'
+import Otp from '../components/user/auth/Otp'
 
 const UserRoutes = () => {
 
@@ -42,6 +44,10 @@ const UserRoutes = () => {
         <Route path='/' element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login/sign-up" element={<SignUp />} />
+        <Route path="/login/forget-password" element={<ForgetPassword />} />
+        <Route path="/login/forget-password/otp" element={<Otp />} />
+
+
 
       </Routes>
       

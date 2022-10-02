@@ -18,7 +18,8 @@
   align-items: center;
 }
 
-.main-tabel .data-person .about-person .main-date .item, .main-tabel .data-person .about-person .main-about .item {
+.forget-password,
+.otp, .main-tabel .data-person .about-person .main-date .item, .main-tabel .data-person .about-person .main-about .item {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -68,7 +69,7 @@
   flex-direction: column;
 }
 
-.main-support .main-comments-support .reply, .main-support .main-comments-support .comments-support .head-comments, .main-support .main-items-support .items-support .data-support .item-support .date, .main-information-user .card-user .about-card, .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
+.main-support .main-comments-support .reply, .main-support .main-comments-support .comments-support .head-comments, .main-support .main-items-support .items-support .data-support .item-support .date, .main-information-user .card-user .about-card, .otp .otp-numbers, .dns-Tabel .head-dns, .main-vps-serveses .body-vbs .item-vbs, .main-vps-serveses .head-vps, .wedgets-analytics .left-wedgets .counter, .traffic-overview .header-overview, .wedgits .right-wedgets .item-right-wedgets, .wedgits .left-wedgets .item-wedgets .percentage, .wedgits .left-wedgets .item-wedgets p,
 .wedgits .left-wedgets .item-wedgets h4, .topbar .main-topbar .box, .content-notification .title-notification, .item-bg {
   -webkit-display: flex;
   -moz-display: flex;
@@ -1464,7 +1465,8 @@ p, a, button {
   text-align: center;
   padding: 10px 0;
 }
-.sign-wrapper .right-sign-wrapper .auth-bage .header-auth h3, .sign-wrapper .right-sign-wrapper .auth-bage .header-auth h5 {
+.sign-wrapper .right-sign-wrapper .auth-bage .header-auth h3,
+.sign-wrapper .right-sign-wrapper .auth-bage .header-auth h5 {
   padding: 15px 0;
 }
 .sign-wrapper .right-sign-wrapper .auth-bage .header-auth h5 {
@@ -1512,7 +1514,8 @@ p, a, button {
   .sign-wrapper .right-sign-wrapper .auth-bage .input__box {
     width: 100%;
   }
-  .sign-wrapper .right-sign-wrapper .auth-bage h3, .sign-wrapper .right-sign-wrapper .auth-bage h5 {
+  .sign-wrapper .right-sign-wrapper .auth-bage h3,
+.sign-wrapper .right-sign-wrapper .auth-bage h5 {
     padding: 5px 0;
   }
 }
@@ -1547,6 +1550,31 @@ p, a, button {
     width: 100%;
     margin: 0;
   }
+}
+
+.forget-password a,
+.otp a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.otp .otp-numbers input {
+  background: #F6F6F6;
+  border: 1px solid #E0E0E0;
+  box-shadow: 2px 2px 4px rgba(62, 62, 62, 0.16);
+  border-radius: 1rem;
+  width: 58px;
+  height: 58px;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.otp p {
+  text-align: center;
+}
+.otp p span {
+  color: #FBA30D;
+  cursor: pointer;
 }
 
 .top-wedgits .item-wedgets .bg-item {

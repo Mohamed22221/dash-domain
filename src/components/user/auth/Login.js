@@ -55,7 +55,7 @@ const Login = () => {
    <form >
     <InputField title="Email" type="email" placeholder="Email" value={email} change={(e) =>setEmail(e.target.value)} />
     <InputField title="Password" type="password" placeholder="Password" value={pass} change={(e) =>setPassword(e.target.value)} />
-    <a className='d-flex justify-content-end my-4'>forgot password ?</a>
+    <Link to="/login/forget-password" className='d-flex justify-content-end my-4'>forgot password ?</Link>
     <button onClick={handelLogin} className='btn btn__primary  '>log in</button>
     <p className='d-flex justify-content-center my-3'>Not have an account ?  <Link to="/login/sign-up"> Sign up</Link> </p>
    </form>
