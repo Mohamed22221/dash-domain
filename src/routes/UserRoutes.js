@@ -13,6 +13,7 @@ import Profile from '../pages/user/Profile'
 import SignUp from '../components/user/auth/SignUp'
 import ForgetPassword from '../components/user/auth/ForgetPassword'
 import Otp from '../components/user/auth/Otp'
+import ResetPassword from '../components/user/auth/ResetPassword'
 
 const UserRoutes = () => {
 
@@ -46,8 +47,7 @@ const UserRoutes = () => {
         <Route path="/login/sign-up" element={<SignUp />} />
         <Route path="/login/forget-password" element={<ForgetPassword />} />
         <Route path="/login/forget-password/otp" element={<Otp />} />
-
-
+        <Route path="/login/reset-password" element={<ResetPassword />} />
 
       </Routes>
       

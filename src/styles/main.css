@@ -1572,7 +1572,7 @@ p, a, button {
 .otp p {
   text-align: center;
 }
-.otp p span {
+.otp p a {
   color: #FBA30D;
   cursor: pointer;
 }

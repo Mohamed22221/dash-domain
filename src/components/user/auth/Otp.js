@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SignWrapper from '../../glopal/SignWrapper'
 
 const Otp = () => {
@@ -15,12 +16,10 @@ const Otp = () => {
       <input type="text" placeholder='2' />
       <input type="text" placeholder='3' />
       <input type="text" placeholder='1' />
-
-
      </div>
-    <button className='btn btn__primary  '>Submit</button>
+    <button className='btn btn__primary'>Submit</button>
     <p>00:120 Sec</p>
-    <p>Don’t receive code ? <span>Re-send</span> </p>
+    <p>Don’t receive code ? <Link to="/login/reset-password">Re-send</Link> </p>
     </form>
    </div>
    </SignWrapper>
