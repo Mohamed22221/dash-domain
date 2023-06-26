@@ -16,7 +16,7 @@ import AccountMenu from '../components/glopal/Menu';
 const Topbar = ({ showSide, showSideSm, setShowSideSm, setShowBlurSide }) => {
   const [toggleSearch, setToggleSearch] = useState(true)
   const location = useLocation().pathname.slice(1, 6)
-  const namePerson = JSON.parse(localStorage.getItem("user-info")).email.slice(0, 4)
+  const namePerson = JSON.parse(localStorage.getItem("user-info")).username
   console.log(namePerson)
   return (
     <nav className='topbar '>

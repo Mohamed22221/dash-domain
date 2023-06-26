@@ -6,8 +6,8 @@ import SignWrapper from '../../glopal/SignWrapper';
 
 const Login = () => {
 
- const [email , setEmail] = useState("paul.hoang@vmodev.com")
- const [pass , setPassword] = useState("abcd1234")
+  const [email, setEmail] = useState("kminchelle");
+  const [pass, setPassword] = useState("0lelplR");
  const navigate = useNavigate();
  
  useEffect(() => {
@@ -22,15 +22,15 @@ const Login = () => {
   e.preventDefault()
   
   const config = {
-    method: 'post',
-    url: 'https://api.cdp.setel.devopsinsider.io/api/v1/account-service/login',
-    headers: { 
-      'Content-Type': 'application/json'
+    method: "post",
+    url: "https://dummyjson.com/auth/login",
+    headers: {
+      "Content-Type": "application/json",
     },
-    data : {
-     pass: pass ,
-     email: email 
-  }
+    data: {
+      password: pass,
+      username: email,
+    },
   };
   
   axios(config)
